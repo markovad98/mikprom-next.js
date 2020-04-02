@@ -1,0 +1,12 @@
+@import "variables";
+
+@mixin green-button {
+  padding: 1rem 2rem;
+  background-color: $light-green;
+  color: $grey;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5rem auto;
+}

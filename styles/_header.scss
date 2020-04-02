@@ -1,0 +1,162 @@
+@import "variables";
+@import "mixins";
+
+.header {
+  &-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 5rem;
+  }
+
+  &-logo-contacts {
+    display: flex;
+  }
+
+  &-logo {
+    width: 18rem;
+    padding: 1rem 3rem 1rem 0;
+    margin-right: 3rem;
+    border-right: 2px solid #C4C4C4;;
+  }
+
+  &-phone-mail {
+    display: flex;
+  }
+
+  &-phone {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+
+    &__link {
+      color: $grey;
+      font-size: 1.5rem;
+      white-space: nowrap;
+    }
+
+    &__icon {
+      margin-right: 1rem;
+    }
+  }
+
+  &-mail {
+    display: flex;
+    align-items: center;
+    margin-right: 3rem;
+
+    &__icon {
+      margin-right: 1rem;
+    }
+
+    &__mail {
+      color: $grey;
+      font-size: 1.5rem;
+    }
+  }
+
+  &-social {
+    display: flex;
+    align-items: center;
+
+    &__item {
+      margin-right: 1rem;
+    }
+  }
+
+  &-social-search {
+    display: flex;
+    width: 38%;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-locale-search {
+    display: flex;
+    align-items: center;
+  }
+
+  &-locale {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    border: none;
+    background-color: $very-light-grey;
+    flex: 1;
+    padding: 0.5rem;
+    padding-left: 4rem;
+    cursor: pointer;
+    font-size: 2rem;
+  }
+
+  &-locale::-ms-expand {
+    display: none;
+  }
+
+  &-search {
+    &__icon {
+      width: 57px;
+      height: 57px;
+    }
+  }
+
+  &-navigation {
+    background-color: $grey;
+
+    &-list {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 3rem 5rem 0 5rem;
+      font-size: 2rem;
+
+      &__item {
+        color: $white;
+        padding: 2.5rem 0;
+      }
+
+      &__link {
+        color: $white;
+      }
+    }
+  }
+}
+
+.custom-select {
+  display: flex;
+  position: relative;
+  height: 3rem;
+  line-height: 3;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-right: 3rem;
+}
+
+.custom-select-arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 1rem;
+  transition: 0.25s all ease;
+
+  svg {
+    position: relative;
+    top: 7px;
+  }
+}
+
+@media (max-width: 1576px) {
+  .header {
+    &-phone-mail {
+      flex-direction: column;
+    }
+
+    &-phone {
+      margin-bottom: 1rem;
+    }
+
+    &-social-search {
+      width: 45%;
+    }
+  }
+}
