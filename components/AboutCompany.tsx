@@ -2,8 +2,8 @@ import React from 'react';
 
 const AboutCompany = () => {
     return (
-        <section className="about-company container">
-            <section className="info-company">
+        <section className="about-company">
+            <section className="info-company container">
                 <section className="photo-company">
                     <img src={require("../public/images/beautyPhotos/4.png")} alt="phto"/>
                 </section>
@@ -16,8 +16,10 @@ const AboutCompany = () => {
                     </p>
                 </section>
             </section>{/* info-company */}
-            
-            <section className="quality">
+
+
+            <section className="bg">
+            <section className="quality container">
                 <section className="quality-tech">
                     <img className="quality__icon-one" src={require("../public/images/greyGreenIcons/gearDotsIcon.png")} alt="gearDots"/>
                     <h2 className="title__quality">ТОЛЬКО СОВРЕМЕННЫЕ ТЕХНОЛОГИИ</h2>
@@ -43,8 +45,9 @@ const AboutCompany = () => {
                     </p>
                 </section>
             </section>{/* qualiry*/}
+            </section>
 
-            <section className="warranty">
+            <section className="warranty container">
                 <h2 className="title-warranty">Гарантии качества</h2>
                 <p className="text-warrantl">
                 При соблюдении температурного режима, мы даем гарантию качества на весь срок хранения продукции (6 месяцев).</p>
@@ -55,7 +58,7 @@ const AboutCompany = () => {
 
             </section>{/* warranty */}
 
-            <footer className="footer">
+            <footer className="footer container">
                 <section className="footer-contacts--first">
                     <img className="logo-footer" src={require("../public/images/logos/mikpromLogo.png")} alt="logo"/>
                     <h4 className="contacts">Контакты</h4>
