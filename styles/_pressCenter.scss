@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+
+.press-center {
+  &-title {
+    @include section-title();
+  }
+
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    max-width: 307px;
+
+    >* {
+      margin-bottom: 1rem;
+    }
+
+    &__img {
+      width: 307px;
+      height: 228px;
+    }
+
+    &__time {
+      color: $grey
+    }
+
+    &__text {
+      font-weight: bold;
+      line-height: 1.45;
+    }
+
+    &__btn {
+      @include green-button;
+      padding: 0.4rem 1.2rem;
+      font-size: 1.2rem;
+    }
+
+  }
+
+
+}

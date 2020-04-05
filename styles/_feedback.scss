@@ -1,0 +1,79 @@
+@import "variables";
+@import "mixins";
+
+.feedback {
+  &-title {
+    @include section-title();
+    margin-bottom: 3rem;
+  }
+
+  &-subtitle {
+    margin-bottom: 1rem;
+  }
+
+  &-hint {
+    display: block;
+    color: darkgray;
+    margin-bottom: 3rem;
+  }
+
+  &-form {
+    display: flex;
+    justify-content: space-between;
+
+    &-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-right {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__label {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__input {
+      background: #ebebeb;
+      box-shadow: inset 0px 4px 12px rgba(0, 0, 0, 0.11);
+      border-radius: 20px;
+      border: none;
+      padding: 1rem;
+      width: 30rem;
+    }
+
+    &__textarea {
+      background: #ebebeb;
+      box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 1.5rem;
+      min-width: 30rem;
+      padding: 1rem;
+      margin-bottom: 6rem;
+    }
+
+    &__select {
+      background: #ebebeb;
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.05);
+      border-radius: 1.5rem;
+      min-width: 30rem;
+      padding: 1rem;
+
+      option:first-child {
+        color: red;
+    }
+    }
+
+    &-button {
+      @include green-button()
+    }
+  }
+
+
+}

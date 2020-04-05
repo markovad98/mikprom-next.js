@@ -32,7 +32,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="partners container">
+    <section className="partners">
       <h2 className="partners-title">Наши партнеры</h2>
       <article className="partners-carousel">
         <Carousel
@@ -41,11 +41,11 @@ const Partners = () => {
           itemClass="image-item"
           responsive={responsive}
         >
-          {carouselItems.map((item: string, idx: number) => (
+          {carouselItems.map((img: string, idx: number) => (
             <img
               className="partners-carousel__item"
               key={idx}
-              src={item}
+              src={img}
               alt=""
             />
           ))}

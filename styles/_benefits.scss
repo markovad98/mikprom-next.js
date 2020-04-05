@@ -17,6 +17,7 @@
 
   &-btn {
     @include green-button();
+    margin: 5rem auto;
   }
 
   &-item {

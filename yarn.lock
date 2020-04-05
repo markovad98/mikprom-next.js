@@ -977,6 +977,13 @@
   dependencies:
     "@types/react" "*"
 
+"@types/react-paginate@^6.2.1":
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/@types/react-paginate/-/react-paginate-6.2.1.tgz#2329088d78010ea49661559c8467a24ecd942784"
+  integrity sha512-+q8k1N0WzbMyOCsIEH/p5D6/KQD8dXYLzfvSvriYn//94icd2sqhAL2rWXkgwGvqHGCSTU9AoHtsWCJxPfquUQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react@*", "@types/react@^16.9.2":
   version "16.9.25"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-16.9.25.tgz#6ae2159b40138c792058a23c3c04fd3db49e929e"
@@ -6135,7 +6142,7 @@ prop-types-exact@1.2.0:
     object.assign "^4.1.0"
     reflect.ownkeys "^0.2.0"
 
-prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2:
+prop-types@15.7.2, prop-types@^15.5.8, prop-types@^15.6.1, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -6300,6 +6307,13 @@ react-multi-carousel@^2.5.4:
   version "2.5.4"
   resolved "https://registry.yarnpkg.com/react-multi-carousel/-/react-multi-carousel-2.5.4.tgz#9b9ce44e4faef3ff5ec4705e557cd27ec77338b9"
   integrity sha512-GNtgezj9ktnrVNibxjAPQav4dpVM2snuWMV/EBz/O/0Q5xUv7LaW5LTHzLShV5aHs2OunpUWeNk9FheMJksBYg==
+
+react-paginate@^6.3.2:
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/react-paginate/-/react-paginate-6.3.2.tgz#4e18cbdb2654d308566775fa14df11e820188391"
+  integrity sha512-Ch++Njfv8UHpLtIMiQouAPeJQA5Ki86kIYfCer6c1B96Rvn3UF27se+goCilCP8oHNXNsA2R2kxvzanY1YIkyg==
+  dependencies:
+    prop-types "^15.6.1"
 
 react-responsive-carousel@^3.1.51:
   version "3.1.51"

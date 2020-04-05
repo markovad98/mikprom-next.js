@@ -1,12 +1,15 @@
 @import "~reset-css/sass/reset";
 @import "~react-responsive-carousel/lib/styles/carousel.min.css";
 @import "~react-multi-carousel/lib/styles.css";
-@import "styles/_header";
-@import "styles/_variables";
+@import "~react-paginate/demo/styles/style.css";
+@import "styles/mixins";
+@import "styles/header";
+@import "styles/variables";
 @import "styles/benefits";
 @import "styles/companyInfo";
 @import "styles/partners";
-
+@import "styles/feedback";
+@import "styles/pressCenter";
 
 @font-face {
   font-family: Montserrat;
@@ -21,6 +24,7 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 
 html {
@@ -33,7 +37,7 @@ body {
   height: 100%;
   color: #4c4d4f;
   font-size: 16px;
-  font-family: Montserrat, 'sans-serif';
+  font-family: Montserrat, "sans-serif";
   background-color: $white;
   font-weight: lighter;
 }
@@ -44,4 +48,8 @@ a {
 
 .container {
   margin: 3rem 5rem;
+}
+
+.label-star {
+  color: red;
 }

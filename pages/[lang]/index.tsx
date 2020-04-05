@@ -5,6 +5,8 @@ import Header from "../../layouts/Header";
 import Benefits from "../../components/Benefits";
 import CompanyInfo from "../../components/CompanyInfo";
 import Partners from "../../components/Partners";
+import Feedback from "../../components/Feedback";
+import PressCenter from "../../components/PressCenter";
 
 const IndexPage = () => {
   return (
@@ -14,6 +16,8 @@ const IndexPage = () => {
       <Benefits />
       <CompanyInfo />
       <Partners />
+      <Feedback />
+      <PressCenter />
     </React.Fragment>
   );
 };

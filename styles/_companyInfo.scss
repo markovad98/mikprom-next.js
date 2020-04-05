@@ -21,6 +21,7 @@
 
   &-btn {
     @include green-button();
+    margin: 5rem auto;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
