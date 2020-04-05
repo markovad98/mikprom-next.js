@@ -1,0 +1,175 @@
+@import "variables";
+@import "mixins";
+
+.info-company{
+    display: flex;
+    justify-content: space-between;
+    margin: 90px 0 162px 0;
+    
+}
+
+.photo-company{
+    margin-right: 60px;
+    width: 754px;
+    height: 970px;
+}
+
+.title-company{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 104px;
+    margin-bottom: 11px;
+}
+
+.title-company::after {
+    content: '';
+    display: block;
+    
+    width: 403px;
+    height: 6px;
+    background-color: #B0CD8B;;
+    
+}
+
+.text-company{
+    font-size: 40px;
+    line-height: 65px;
+}
+
+// quality
+
+
+.quality{
+    
+    background-color: rgba(196, 196, 196, 0.1);
+    // background-size: ;
+    
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.64);
+    
+    display: flex;
+    justify-content: space-between;
+    color: #4C4D4F;
+    padding: 15px;
+    
+}
+
+.quality-tech{
+    width: 28%;
+    
+}
+
+.quality__icon-one{
+    width: 127px;
+    height: 125px;
+    margin-bottom: 25px;
+}
+.quality__icon-two{
+    width: 157px;
+    height: 125px;
+    margin-bottom: 25px;
+}
+.quality__icon-three{
+    width: 134px;
+    height: 125px;
+    margin-bottom: 25px;
+}
+
+.title__quality{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 57px;
+    text-transform: uppercase;
+    margin-bottom: 92px;
+}
+
+.text__quality{
+    font-size: 33px;
+    line-height: 54px;
+}
+
+.warranty{
+    margin-top: 167px;
+}
+
+.title-warranty{
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 104px;
+    text-align: center;
+}
+
+.title-warranty::after{
+    content: '';
+    display: block;
+    
+    width: 645px;
+    height: 6px;
+    background-color: #B0CD8B;
+    margin: auto;
+
+    margin-bottom: 63px;
+}
+
+.text-warrantl{
+    font-size: 40px;
+    line-height: 65px;
+}
+
+
+// footer
+
+.footer{
+    display: flex;
+    margin-top: 260px;
+    justify-content: space-between;
+}
+
+.footer-contacts--first{
+    
+}
+
+.logo-footer{
+    width: 356px;
+    height: 46px;
+}
+
+.contacts{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 65px;
+    margin-bottom: 47px;
+    margin-top: 20px;
+}
+
+.number{
+    font-size: 30px;
+    line-height: 36px;
+}
+
+.indentation{
+    margin-bottom: 33px;
+}
+
+.icon-contacts{
+    width: 25px;
+    height: 30px;
+    margin-right: 31px;
+    left: 10px;
+}
+.icon-contacts--mail{
+    width: 30px;
+    height: 20px;
+    margin-right: 31px;
+}
+
+.adress{
+    font-size: 36px;
+    line-height: 59px;
+}
+
+.section-nav{
+    font-size: 36px;
+    line-height: 59px;
+}
+
+
