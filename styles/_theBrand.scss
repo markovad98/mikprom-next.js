@@ -1,0 +1,41 @@
+@import "variables";
+@import "mixins";
+
+
+.brand {
+    margin-top: 161px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.choice__brand {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.choice__brand::after{
+    content: '';
+    display: block;
+    
+    width: 295px;
+    height: 5px;
+    background-color: #B0CD8B;;
+}
+
+.logo-chick {
+    width: 369px;
+    height: 135px;
+    display: block;
+    margin:  -115px auto;
+    
+    
+}
+
+.logo-micprom {
+    width: 389px;
+    height: 49px;
+}
