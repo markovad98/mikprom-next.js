@@ -16,9 +16,10 @@
 
 .nav{
     display: inline;
-    margin-right: 10px;
+    padding-right: 15px;
+    
     border-right: 1px solid #C4C4C4;
-    padding-right: 10px;
+    padding-left: 15px;
 
     font-size: 25px;
     line-height: 42px;
@@ -30,6 +31,7 @@
 
 .nav:hover{
     border-bottom: 5px solid #B0CD8B;
+    width: auto;
     cursor: pointer;
 }
 
@@ -43,26 +45,43 @@
     text-align: center;
     flex-wrap: wrap;
     margin-bottom: 100px;
+
+    
 }
 
 .product-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
     flex-basis: 30%;
+    // border:1px solid #cccccc; 
+    width:auto; 
+    
+    margin-right:5px;
+    margin-bottom:20px; 
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: auto; 
+    overflow:hidden;
     
 }
 
 .chick-fillet-one{
-    width: 269px;
-    height: 192px;
+    width: 340x;
+    height: 250px;
 }
 
 .chick-fillet-two{
-    width: 269px;
-    height: 192px;
+    width: 239px;
+    height: 162px;
 }
 
 .chick-fillet-three{
-    width: 277px;
-    height: 190px;
+    width: 237px;
+    height: 150px;
 }
 
 .title-product-fix{
@@ -84,14 +103,20 @@
 .title-product{
     margin-top: 30px;
     font-weight: bold;
-    font-size: 20px;
-    line-height: 37px;
+    font-size: 17px;
+    line-height: 24px;
+
+    
 }
 
 .subtitle-product{
     font-size: 25px;
     line-height: 41px;
     margin-bottom: 20px;
+}
+
+.btn-end{
+  
 }
 
 .btn-basket{
@@ -103,4 +128,6 @@
     line-height: 35px;
     text-align: center;
     margin-bottom: 38px;
+    cursor: pointer;
+    
 }
