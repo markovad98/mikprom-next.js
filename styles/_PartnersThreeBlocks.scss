@@ -1,0 +1,61 @@
+@import "variables";
+@import "mixins";
+
+.partners-business{
+    margin-top: 200px;
+}
+
+.header-business{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #4C4D4F;
+    margin-bottom: 40px;
+}
+
+.header-business::after {
+    content: '';
+    display: block;
+    width: 580px;
+    height: 5px;
+    background: #B0CD8B;   
+}
+
+.cards{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   flex-basis: 33%;
+    
+}
+
+.center-tag{
+   
+}
+
+.img-business{
+    display:block;
+    margin:auto;
+    margin-bottom: 50px;
+}
+
+.cards-business{
+    width: 25%;
+}
+
+.info-business{
+
+}
+
+.title-business{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #4C4D4F;
+}
+
+.text-business{
+    font-size: 15px;
+    line-height: 25px;
+    color: #4C4D4F;
+}
