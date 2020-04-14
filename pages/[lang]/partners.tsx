@@ -2,11 +2,9 @@ import React from "react";
 import withLocale from "../../hocs/withLocale";
 // import useTranslation from "../../hooks/useTranslation";
 import Header from "../../layouts/Header";
-import CatalogBanner from "../../components/CatalogBanner";
-import TheBrand from "../../components/TheBrand";
-import ProductSections from "../../components/ProductSections";
-import ProductFeedback from "../../components/ProductFeedback";
 import Footer from "../../components/Footer";
+import PartnersQuality from "../../components/PartnersQuality";
+import PartnersThreeBlocks from "../../components/PartnersThreeBlocks";
 
 
 const IndexPage = () => {
@@ -15,10 +13,8 @@ const IndexPage = () => {
     return (
         <React.Fragment>
             <Header />
-            <CatalogBanner/>
-            <TheBrand/>
-            <ProductSections/>
-            <ProductFeedback/>
+            <PartnersQuality/>
+            <PartnersThreeBlocks/>
             <Footer/>
         </React.Fragment>
     );

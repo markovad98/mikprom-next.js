@@ -18,8 +18,8 @@ const Header = () => {
     { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog` },
     {
       title: "Детское питание",
-      path: "/[lang]/baby-food",
-      link: `/${locale}/baby-food`
+      path: "/[lang]/ChildrenFood",
+      link: `/${locale}/ChildrenFood`
     },
     {
       title: "Партнерам",

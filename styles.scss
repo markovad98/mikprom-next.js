@@ -11,6 +11,13 @@
 @import "styles/feedback";
 @import "styles/pressCenter";
 @import "styles/aboutCompany";
+@import "styles/catalogBanner";
+@import "styles/theBrand";
+@import "styles/productSections";
+@import "styles/productFeedback";
+@import "styles/childrenFood";
+@import "styles/partnersQuality";
+@import "styles/PartnersThreeBlocks";
 
 @font-face {
   font-family: Montserrat;
@@ -48,7 +55,9 @@ a {
 }
 
 .container {
-  margin: 3rem 5rem;
+  // margin: 3rem 6rem;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .label-star {

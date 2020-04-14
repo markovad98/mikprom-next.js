@@ -2,10 +2,7 @@ import React from "react";
 import withLocale from "../../hocs/withLocale";
 // import useTranslation from "../../hooks/useTranslation";
 import Header from "../../layouts/Header";
-import CatalogBanner from "../../components/CatalogBanner";
-import TheBrand from "../../components/TheBrand";
-import ProductSections from "../../components/ProductSections";
-import ProductFeedback from "../../components/ProductFeedback";
+import ChildrenFood from "../../components/ChildrenFood";
 import Footer from "../../components/Footer";
 
 
@@ -15,10 +12,7 @@ const IndexPage = () => {
     return (
         <React.Fragment>
             <Header />
-            <CatalogBanner/>
-            <TheBrand/>
-            <ProductSections/>
-            <ProductFeedback/>
+            <ChildrenFood/>
             <Footer/>
         </React.Fragment>
     );

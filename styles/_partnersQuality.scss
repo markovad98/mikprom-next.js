@@ -1,0 +1,70 @@
+@import "variables";
+@import "mixins";
+
+.title-header{
+    margin-top: 89px;
+}
+
+.title-patner{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    color: #4C4D4F;
+    text-transform: uppercase;
+}
+
+.twoline{
+    padding-top: 10px;
+}
+
+.twoline::after{
+    content: '';
+    display: block;
+    width: 900px;
+    height: 5px;
+    background: #B0CD8B;   
+}
+
+.text-partner{
+    margin-top: 28px;
+    font-size: 26px;
+    line-height: 40px;
+    color: #4C4D4F;
+}
+
+
+.aboutus{
+    margin-top: 46px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.cards-aboutus{
+    padding: 30px;
+    flex-basis: 40%;;
+    flex-shrink: 0;
+}
+
+.icon-card{
+    width: 25%;
+    display:block;
+    margin:auto;
+    margin-bottom: 20px;
+    
+}
+
+.title-card{
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 40px;
+    color: #4C4D4F;
+    text-transform: uppercase;
+}
+
+.text-card{
+    font-size: 19px;
+    line-height: 27px;
+    color: #4C4D4F;
+}
