@@ -1,15 +1,6 @@
 @import "variables";
 @import "mixins";
 
-.title-sub::after {
-    content: '';
-    display: block;
-
-    margin-top: 10px;
-    width: 550px;
-    height: 5px;
-    background-color: #B0CD8B;;
-}
 
 .style-form {
     margin-bottom: 10px;

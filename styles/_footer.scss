@@ -1,0 +1,89 @@
+@import "variables";
+@import "mixins";
+
+// footer
+
+.footer{
+    display: flex;
+    margin-top: 260px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+// .footer-contacts--first{
+// width: 30%;
+// }
+
+// .footer-contacts--second{
+// width: 40%;
+// }
+
+// .footer-contacts--last{
+// width: 30%;
+// }
+
+
+.logo-footer{
+    width: 249px;
+    height: 32px;
+}
+
+.contacts{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 39px;
+    margin-bottom: 27px;
+    margin-top: 20px;
+}
+
+.number{
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.indentation{
+    margin-bottom: 17px;
+}
+
+.icon-contacts{
+    width: 20px;
+    height: 25px;
+    margin-right: 20px;
+    left: 10px;
+}
+.icon-contacts--mail{
+    width: 25px;
+    height: 15px;
+    margin-right: 20px;
+}
+
+.adress{
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.section-nav{
+    font-size: 20px;
+    line-height: 39px;
+}
+
+.section-nav>li:hover {
+   
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.social-icons{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.social-icon{
+    width: 20%;
+}
+
+.copyright{
+margin-top: 20px;
+}

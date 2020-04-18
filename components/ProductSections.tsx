@@ -14,103 +14,193 @@ const ProductSections = () => {
             
             <section className="products container">
 
-                <section className="product-price">
+                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/3.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ГРУДКИ ЦЫПЛЕНКА</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/2.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА БЕЗ КОЖИ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА С КОЖЕЙ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/3.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ГРУДКИ ЦЫПЛЕНКА</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/2.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА БЕЗ КОЖИ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА С КОЖЕЙ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/3.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ГРУДКИ ЦЫПЛЕНКА</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/2.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА БЕЗ КОЖИ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
                 <section className="product-price">
                     <div className="img-fillet">
-                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.png")} alt="fillet"/>
+                        <img className="chick-fillet-one" src={require("../public/images/chickenPhotos/1.svg")} alt="fillet"/>
                     </div>
-                    <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА С КОЖЕЙ</h3>
-                    <h4 className="subtitle-product">500р.</h4>
+                    <div className="pressdown">
+                        <h3 className="title-product">ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА  БРОЙЛЕРА (С КОЖЕЙ)</h3>
+                        <h4 className="subtitle-product">500р.</h4>
+                    </div>
                     <div className="btn-end">
                         <button className="btn-basket">В корзину</button>
+                        <div className="food-counter">
+                            <button className="counter-button">-</button>
+                            <span className="counter">1</span>
+                            <button className="counter-button">+</button>
+                        </div>
                     </div>
+                    <div className="wrapper-kg">
+                            <p className="kg">кг</p>
+                        </div>
                 </section>
 
             </section> {/* products */}
