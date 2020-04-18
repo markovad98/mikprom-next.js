@@ -1,0 +1,164 @@
+@import "variables";
+@import "mixins";
+
+
+
+.title-contacts{
+    padding: 100px 0;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 48px;    
+}
+
+.wrapper-contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+}
+
+
+
+.contacts-block{
+    flex-basis: 30%; 
+    margin-left: 100px;
+}
+
+.icon-communication{
+    width: 47px;
+    height: 80px;
+    padding-bottom: 20px;
+}
+
+.title-communication{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+    padding-bottom: 15px;
+}
+
+.text-communication{
+    font-size: 26px;
+    line-height: 39px;
+}
+
+.text-number{
+    font-size: 26px;
+    line-height: 39px;
+}
+
+b {
+    font-weight: bold;
+}
+
+
+.department{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-top: 150px;
+    
+}
+
+
+
+.department-title{
+    width: 50%;
+    padding-bottom: 50px;
+ 
+
+}
+
+.arrow-com{
+    position: relative;
+}
+.arrow-com::before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -45px;
+    width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-left: 20px solid #B0CD8B;
+	border-bottom: 10px solid transparent;
+}
+
+.phone-dep{
+    font-size: 26px;
+    line-height: 39px;
+}
+
+
+.feedback-contacts{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.fill{
+    
+}
+
+.border-left{
+    position: relative;
+    
+}
+
+.border-left::after {
+    content: '';
+    position: absolute;
+    background: #C4C4C4;
+    width: 6px;
+    height: 250px;
+    top: 0;
+    left: 700px;
+}
+
+
+.title-fill{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 43px;
+}
+
+.subtitle-fill{
+    font-size: 26px;
+    line-height: 39px;
+    width: 60%;
+}
+
+.btn-fill{
+    margin-top: 70px;
+    font-size: 30px;
+    line-height: 31px;
+    text-align: center;
+    width: 308px;
+    height: 70px;
+    background: rgba(176, 205, 139, 0.5);
+    border: none;
+    color: #4C4D4F
+}
+
+.icon-pen{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.number-phone{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 53px;
+    margin-top: 20px;
+    color: #CF686F;   
+}
+
+.map-geo{
+    margin-top: 160px;
+}
+
+.map-width{
+    width: 100%;
+}

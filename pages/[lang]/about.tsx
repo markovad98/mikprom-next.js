@@ -3,6 +3,7 @@ import withLocale from "../../hocs/withLocale";
 // import useTranslation from "../../hooks/useTranslation";
 import Header from "../../layouts/Header";
 import AboutCompany from "../../components/AboutCompany";
+import Footer from "../../components/Footer";
 
 const IndexPage = () => {
     // const { t } = useTranslation();
@@ -11,6 +12,7 @@ const IndexPage = () => {
         <React.Fragment>
             <Header />
             <AboutCompany />
+            <Footer/>
         </React.Fragment>
     );
 };

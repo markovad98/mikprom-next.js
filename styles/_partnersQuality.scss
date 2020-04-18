@@ -17,14 +17,6 @@
     padding-top: 10px;
 }
 
-.twoline::after{
-    content: '';
-    display: block;
-    width: 900px;
-    height: 5px;
-    background: #B0CD8B;   
-}
-
 .text-partner{
     margin-top: 28px;
     font-size: 26px;
@@ -50,7 +42,6 @@
 .icon-card{
     width: 25%;
     display:block;
-    margin:auto;
     margin-bottom: 20px;
     
 }
