@@ -5,20 +5,24 @@
   background-color: $light-green;
   color: $grey;
   border: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   font-weight: bold;
   max-width: 332px;
 }
 
 @mixin section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 5rem;
 }
 
 @mixin subtitle {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
   font-weight: bold;
-  margin-bottom: 5rem;
+  line-height: 2rem;
+}
+
+@mixin text {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
 }

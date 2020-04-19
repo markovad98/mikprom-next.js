@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="footer container">
-      <section className="footer-contacts--first">
+      <section className="footer-contacts--first footer-section">
         <h4 className="contacts">Контакты</h4>
         <ul className="number">
           <li className="indentation">
@@ -23,6 +23,7 @@ const Footer = () => {
             info@mikprom.ru
           </li>
         </ul>
+        <div className="social">
         <div className="social-icons">
           <img
             src={require("../public/images/icons/fb.svg")}
@@ -47,14 +48,15 @@ const Footer = () => {
         </div>
         <img
           className="logo-footer"
-          src={require("../public/images/logos/mikpromLogo.png")}
+          src={require("../public/images/logos/mikpromLogo.svg")}
           alt="logo"
         />
         <p className="copyright">
           © 2020, Компания «МИКПРОМ». <br /> Все права защищены
         </p>
+        </div>
       </section>
-      <section className="footer-contacts--second">
+      <section className="footer-contacts--second footer-section">
         <h4 className="contacts">Адрес</h4>
         <ul className="adress">
           <li>Саратовская область, </li>
@@ -63,7 +65,7 @@ const Footer = () => {
           <li>ул. Гагарина 1/1</li>
         </ul>
       </section>
-      <section className="footer-contacts--last">
+      <section className="footer-contacts--last footer-section">
         <h4 className="contacts">Разделы</h4>
         <ul className="section-nav">
           <li>О компании</li>

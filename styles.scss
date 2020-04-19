@@ -36,6 +36,9 @@
 * {
   box-sizing: border-box;
   outline: none;
+  padding: 0;
+	margin: 0;
+	border: 0;
 }
 
 html {
@@ -47,7 +50,7 @@ body {
   width: 100%;
   height: 100%;
   color: #4c4d4f;
-  font-size: 16px; // 1rem
+  font-size: 16px;
   font-family: Montserrat, "sans-serif";
   background-color: $white;
   font-weight: lighter;
@@ -58,11 +61,19 @@ a {
 }
 
 .container {
-  margin-left: 10%;
-  margin-right: 10%;
+  // margin: 3rem 6rem;
+ 
+  max-width: 1170px;
+  margin: auto;
 }
 
 .label-star {
   color: red;
 }
 
+
+@media (max-width: 419px){
+  .container {
+    
+  }
+}
