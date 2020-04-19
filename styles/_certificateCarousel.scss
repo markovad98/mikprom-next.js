@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+
+.certificate-carousel {
+  display: flex;
+  justify-content: center;
+  background-color: $light-grey;
+  width: 100%;
+  padding: 3rem 0;
+  margin: 3rem 0;
+
+  .carousel-slider {
+    width: 500px !important;
+  }
+}

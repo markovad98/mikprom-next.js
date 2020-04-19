@@ -21,6 +21,7 @@
 @import "styles/PressCenterCards";
 @import "styles/ContactsInfo";
 @import "styles/footer";
+@import "styles/certificateCarousel";
 
 @font-face {
   font-family: Montserrat;
@@ -71,9 +72,3 @@ a {
   color: red;
 }
 
-
-@media (max-width: 419px){
-  .container {
-    
-  }
-}
