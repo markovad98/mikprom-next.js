@@ -8,7 +8,6 @@ import Layout from "../../layouts";
 
 
 const IndexPage = () => {
-
     return (
         <Layout>
             <CatalogBanner/>
