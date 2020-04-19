@@ -1,7 +1,14 @@
-import React from "react";
-import ReactPaginate from "react-paginate";
+import React, { useState } from "react";
+import Pagination from "react-paginate";
 
 const PressCenter = () => {
+  const [currentPage, setCurrentPage] = useState(1);
+
+  const func = (data: any) => {
+    console.log(data, currentPage);
+    setCurrentPage(1);
+  };
+
   const articles = [
     {
       img: require("../public/images/beautyPhotos/новости.jpg"),
@@ -33,17 +40,28 @@ const PressCenter = () => {
         ))}
       </div>
 
-      <ReactPaginate
-        previousLabel={"previous"}
-        nextLabel={"next"}
+      <Pagination
+        previousLabel={
+          <img
+            style={{ transform: "rotate(180deg)", width: "24px" }}
+            src={require("../public/images/icons/paginateArrow.png")}
+            alt=""
+          />
+        }
+        nextLabel={
+          <img
+            style={{ width: "24px" }}
+            src={require("../public/images/icons/paginateArrow.png")}
+            alt=""
+          />
+        }
         breakLabel={"..."}
         breakClassName={"break-me"}
-        pageCount={3}
+        pageCount={12}
         marginPagesDisplayed={2}
-        pageRangeDisplayed={5}
-        onPageChange={(data: any) => console.warn(data)}
+        pageRangeDisplayed={3}
+        onPageChange={func}
         containerClassName={"pagination"}
-        // subContainerClassName={"pages pagination"}
         activeClassName={"active"}
       />
     </section>

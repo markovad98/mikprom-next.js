@@ -29,7 +29,7 @@ const Header = () => {
     {
       title: "Пресс-центр",
       path: "/[lang]/press-center",
-      link: `/${locale}/press-center`
+      link: `/${locale}/PressCenter`
     },
     { title: "Контакты", path: "/[lang]/contacts", link: `/${locale}/contacts` }
   ];

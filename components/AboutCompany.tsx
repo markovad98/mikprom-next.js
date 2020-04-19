@@ -17,7 +17,6 @@ const AboutCompany = () => {
                 </section>
             </section>{/* info-company */}
 
-
             <section className="bg">
             <section className="quality container">
                 <section className="quality-tech">

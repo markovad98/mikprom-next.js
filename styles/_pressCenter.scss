@@ -42,5 +42,26 @@
 
   }
 
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+    margin-bottom: 14rem;
+
+    .active {
+      font-weight: bold;
+    }
+
+    >* {
+      margin-right: 1rem;
+      cursor: pointer;
+    }
+
+    *:last-child {
+      margin-right: 0;
+    }
+  }
+
 
 }

@@ -1,22 +1,16 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-// import useTranslation from "../../hooks/useTranslation";
-import Header from "../../layouts/Header";
 import PartnersQuality from "../../components/PartnersQuality";
 import PartnersThreeBlocks from "../../components/PartnersThreeBlocks";
-import Footer from "../../components/Footer";
+import Layout from "../../layouts";
 
 
 const IndexPage = () => {
-    // const { t } = useTranslation();
-
     return (
-        <React.Fragment>
-            <Header />
+        <Layout>
             <PartnersQuality/>
             <PartnersThreeBlocks/>
-            <Footer/>
-        </React.Fragment>
+        </Layout>
     );
 };
 

@@ -7,7 +7,6 @@ const ContactsInfo = () => {
             <h2 className="title-contacts">КОНТАКТЫ</h2>
             <section className="wrapper-contacts">
                 <div className="contacts-block">
-                    
                     <img className="icon-communication" src={require("../public/images/greenIcons/location.svg")} alt="location"/>
                     <h3 className="title-communication">АДРЕС</h3>
                     

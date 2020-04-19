@@ -1,15 +1,14 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-import ChildrenFood from "../../components/ChildrenFood";
+import ContactsInfo from "../../components/ContactsInfo";
 import Layout from "../../layouts";
 
-
-const IndexPage = () => {
+const Contacts = () => {
     return (
         <Layout>
-            <ChildrenFood />
+            <ContactsInfo />
         </Layout>
     );
 };
 
-export default withLocale(IndexPage);
+export default withLocale(Contacts);

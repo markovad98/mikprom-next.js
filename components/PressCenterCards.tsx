@@ -5,13 +5,14 @@ const PressCenterCards = () => {
     <section className="press-center container">
       <h2 className="title-center">ПРЕСС-ЦЕНТР</h2>
       <section className="press-center-cards">
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/1.svg")} alt="img"/>
+
+        <article className="card-center">
+          <img className="img-card" src={require("../public/images/press-center/1.svg")} alt="Мы расширили географию поставок, выйдя на новый уровень"/>
           <div className="wrapper-info">
             <p className="data-card">27.02.2020</p>
             <p className="text-info">Мы расширили географию поставок, выйдя на новый уровень</p>
           </div>
-        </div>
+        </article>
 
         <div className="card-center">
           <img className="img-card" src={require("../public/images/press-center/2.svg")} alt="img"/>

@@ -1,13 +1,13 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-import ChildrenFood from "../../components/ChildrenFood";
+import AboutCompany from "../../components/AboutCompany";
 import Layout from "../../layouts";
 
-
 const IndexPage = () => {
+
     return (
         <Layout>
-            <ChildrenFood />
+            <AboutCompany />
         </Layout>
     );
 };

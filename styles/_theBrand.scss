@@ -1,13 +1,11 @@
 @import "variables";
 @import "mixins";
 
-
 .brand {
     margin-top: 161px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
 }
 
 .choice__brand {
@@ -17,15 +15,11 @@
     text-transform: uppercase;
 }
 
-
-
 .logo-chick {
     width: 369px;
     height: 135px;
     display: block;
-    margin:  -115px auto;
-    
-    
+    margin: -115px auto;
 }
 
 .logo-micprom {
