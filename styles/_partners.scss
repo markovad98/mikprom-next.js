@@ -2,10 +2,11 @@
 @import "mixins";
 
 .partners {
-  margin: 3rem 5rem 0 3rem;
+  margin: 3rem 0;
 
   &-title {
     @include section-title();
+    margin-bottom: 1.5rem;
   }
 
   &-carousel {

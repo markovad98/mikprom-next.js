@@ -32,7 +32,7 @@ const Partners = () => {
   ];
 
   return (
-    <section className="partners">
+    <section className="partners container">
       <h2 className="partners-title">Наши партнеры</h2>
       <article className="partners-carousel">
         <Carousel

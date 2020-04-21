@@ -2,7 +2,7 @@ import React from "react";
 
 const CompanyInfo = () => {
   return (
-    <section className="company-info">
+    <section className="company-info container">
       <article className="company-info-article">
         <h2 className="company-info-article__title">О Компании</h2>
         <p className="company-info-article__text">

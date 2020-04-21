@@ -2,6 +2,8 @@
 @import "mixins";
 
 .feedback {
+  padding-top: 3rem;
+
   &-title {
     @include section-title();
     margin-bottom: 2rem;
