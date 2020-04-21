@@ -8,6 +8,10 @@
     line-height: 0.8rem;
 }
 
+.feedback-subtitle{
+    font-size: 1.2rem;
+}
+
 .feedback-f{
     padding-bottom: 6rem;
 }
@@ -23,16 +27,30 @@ font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
   background: rgba(176, 205, 139, 0.5);
-  padding: 0.6rem 1.7rem;
+  padding: 0.8rem 1.7rem;
   border: none;
   font-size: 1.5rem;
   line-height: 1.8rem;
   text-align: center;
   margin-bottom: 0.7rem;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .feedback-forms {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 1067px){
+    .feedback-form__input {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 550px){
+    .feedback {
+        padding-bottom: 0;
+    }
 }

@@ -25,3 +25,9 @@
     width: 389px;
     height: 49px;
 }
+
+@media (max-width: 1210px){
+    .brand {
+        display: none;
+    }
+}

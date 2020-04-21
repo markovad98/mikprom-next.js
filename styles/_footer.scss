@@ -82,8 +82,10 @@ margin-top: 1.6rem;
 
 @media (max-width: 731px){
     .footer{
-        display: flex;
         margin-top: 16.25rem;
+    }
+    .footer-wrapp{
+        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         
