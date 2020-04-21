@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProductSections = () => {
     return (
-        <section>
+        <section className="bg-grey">
         <section className="product-sections container">
             <section className="section-nav">
                     <nav className="nav active">Куриная разделка</nav>

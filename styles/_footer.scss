@@ -4,8 +4,13 @@
 // footer
 
 .footer{
+    margin-top: 5rem;
+    display: block;
+    margin-bottom: 0;
+}
+
+.footer-wrapp{
     display: flex;
-    margin-top: 16.25rem;
     justify-content: space-between;
 }
 

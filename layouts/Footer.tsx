@@ -2,7 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer container">
+    <footer className="footer bg-grey">
+      <section className="footer-wrapp container">
       <section className="footer-contacts--first footer-section">
         <h4 className="contacts">Контакты</h4>
         <ul className="number">
@@ -75,6 +76,7 @@ const Footer = () => {
           <li>Логистика</li>
           <li>Контакты</li>
         </ul>
+      </section>
       </section>
     </footer>
   );

@@ -2,16 +2,15 @@
 @import "mixins";
 
 .brand {
-    margin-top: 161px;
+    padding-top: 7.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 7rem;
 }
 
 .choice__brand {
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 50px;
+    @include section-title();
     text-transform: uppercase;
 }
 

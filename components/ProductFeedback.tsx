@@ -2,7 +2,7 @@ import React from "react";
 
 const ProductFeedback = () => {
   return (
-    <section className="feedback container">
+    <section className="feedback container feedback-f">
       <h3 className="feedback-title title-sub">Заказать пробную партию</h3>
       <p className="feedback-subtitle">
         Убедитесь в качестве продукции по ГОСТу от “МИКПРОМ”.
@@ -12,7 +12,7 @@ const ProductFeedback = () => {
         <div className="feedback-form-left">
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form"> Имя <sup className="label-star">*</sup></span>
-            <input type="text" className="feedback-form__input" />
+            <input type="text" className="feedback-form__input"/>
           </label>
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form"> Телефон <sup className="label-star">*</sup></span>
