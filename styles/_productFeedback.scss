@@ -37,20 +37,68 @@ font-family: Montserrat;
   text-transform: uppercase;
 }
 
+.craft-btn:hover {
+    background: rgba(150, 192, 94, 0.5);
+}
+
 .feedback-forms {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-@media (max-width: 1067px){
-    .feedback-form__input {
+@media (max-width: 1249px){
+    .feedback{
+        padding: 0 2rem;
+    }
+    .input-indent{
         margin-bottom: 2rem;
     }
 }
 
-@media (max-width: 550px){
-    .feedback {
-        padding-bottom: 0;
+@media (max-width: 1067px){
+    
+}
+
+@media (max-width: 553px){
+    .feedback{
+        padding: 0 1rem;
+    }
+    .input-indent{
+        width: 20rem;
+    }
+    .input-indents{
+        min-width: 20rem;
+        
+    }
+    .mess {
+       
+        margin-bottom: 0.7rem;
+        font-size: 1.2rem;
+        line-height: 0.8rem;
+    }
+    .input-inden{
+        min-width: 20rem;
+    }
+}
+@media (max-width: 553px){
+    .feedback{
+        padding: 0 1rem;
+    }
+    .input-indent{
+        width: 15rem;
+    }
+    .input-indents{
+        min-width: 13rem;
+        
+    }
+    .mess {
+       
+        margin-bottom: 0.7rem;
+        font-size: 1.2rem;
+        line-height: 0.8rem;
+    }
+    .input-inden{
+        min-width: 15rem;
     }
 }

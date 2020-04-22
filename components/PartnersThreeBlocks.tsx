@@ -16,7 +16,7 @@ const PartnersThreeBlocks = () => {
                 </div> {/* /.cards-business */}
 
                 <div className="cards-business">
-                    <img className="img-business" src={require("../public/images/greyGreenIcons/deliveryIcon.svg")} alt="deliveryIcon"/>
+                <div className="center-tag"><img className="img-business" src={require("../public/images/greyGreenIcons/deliveryIcon.svg")} alt="deliveryIcon"/></div>
                     <div className="info-business">
                         <h3 className="title-business">БЕСПЛАТНАЯ ДОСТАВКА</h3>
                         <p className="text-business">Доставляем продукцию от 5 кг бесплатно в Саратовской и Пензенской областях. Ежедневные поставки.</p>
@@ -25,7 +25,7 @@ const PartnersThreeBlocks = () => {
                 </div> {/* /.cards-business */}
 
                 <div className="cards-business">
-                    <img className="img-business img-three" src={require("../public/images/greyGreenIcons/newsIcon.svg")} alt="newsIcon"/>
+                <div className="center-tag"><img className="img-business img-three" src={require("../public/images/greyGreenIcons/newsIcon.svg")} alt="newsIcon"/></div>
                     <div className="info-business">
                         <h3 className="title-business">ДОКУМЕНТАЦИЯ</h3>
                         <p className="text-business">Предоставляем все сопроводительные документы, включая ветеренарную спраку.</p>
@@ -59,7 +59,7 @@ const PartnersThreeBlocks = () => {
                     <div className="wrapper">
                         <h2 className="title-application">Оформить документы</h2>
                         <p className="text-application">Вы можете ознакомиться с перечнем всех необходимых для заключения договора документов.</p>
-                        <button className="btn-application">Подробнее</button>
+                        <button className="btn-application pzeo">Подробнее</button>
                     </div>
                 </div>{/* application */}
             </section>

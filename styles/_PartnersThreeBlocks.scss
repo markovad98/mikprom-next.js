@@ -2,63 +2,54 @@
 @import "mixins";
 
 .partners-business{
-    margin-top: 200px;
+    margin-top: 6.25rem;
 }
 
 .header-business{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
+    @include section-title();
     color: #4C4D4F;
-    margin-bottom: 40px;
+    margin-bottom: 4rem;
 }
-
-
 
 .cards{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   flex-basis: 33%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-basis: 33%;
     
-}
-
-.center-tag{
-   
 }
 
 .img-business{
     display:block;
-    margin:auto;
-    margin-bottom: 60px;
-    width: 30%;
+    margin-bottom: 3.7rem;
+    width: 6rem;
 
 }
 
+.center-tag{
+    height: 2rem;
+    padding-bottom: 7.5rem;
+}
+
 .img-three {
-    width: 17%;
+    width: 4.5rem;
     
 }
 
 .cards-business{
-    width: 25%;
+    flex-basis: 25%;
     align-items: flex-start;
 }
 
-.info-business{
-
-}
-
 .title-business{
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 35px;
+    @include subtitle();
     color: #4C4D4F;
+    margin-bottom: 1rem;
 }
 
 .text-business{
-    font-size: 15px;
-    line-height: 25px;
+    @include text();
     color: #4C4D4F;
 }
 
@@ -66,14 +57,12 @@
 // deliveries
 
 .deliveries{
-    margin-top: 190px;
+    margin-top: 8.75rem;
 }
 
 .title-deliveries{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 100px;
+    @include section-title();
+    margin-bottom: 6.25rem;
 }
 
 
@@ -86,20 +75,17 @@
 // To become partner
 
 .become__partner{
-    margin-top: 142px;
+    margin-top: 8.8rem;
 }
 
 .title-become__partner{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    margin-bottom: 50px;
+    @include section-title();
+    margin-bottom: 3.1rem;
 }
 
 
 .text-become__partner{
-    font-size: 20px;
-    line-height: 25px;
+    @include text();
 }
 
 .application{
@@ -107,25 +93,24 @@
 }
 
 .wrapper{
-    margin-top: 30px;
-    margin-left: 150px;
+    margin-top: 1.8rem;
+    margin-left: 9.4rem;
 }
 
 .title-application{
+    font-size: 1.8rem;
     font-weight: bold;
-    font-size: 30px;
-    line-height: 30px;
-    margin-bottom: 15px;
+    line-height: 2rem;
+    margin-bottom: 0.9rem;
 }
 
 .title-application:first-child{
-    padding-top: 40px;
+    padding-top: 2.5rem;
 }
 
 .text-application{
-    font-size: 20px;
-    line-height: 24px;
-    width: 700px;
+    @include text();
+    width: 43.75rem;
 }
 
 .btn-application{
@@ -137,9 +122,15 @@
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 20px;
+    line-height: 30px;
     text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-application:hover {
+    background: rgba(150, 192, 94, 0.5);
 }
 
 .number-app{
@@ -158,25 +149,16 @@
     top: 70px;
     left: 0;
 }
+
 .number-app::after {
     content: '';
     display: block;
-    // background-image: url('/public/images/Arrow 1.svg') no-repeat;
     position: absolute;
     border: 2px dashed #4C4D4F;
     height: 110px;
     top: 100px;
     opacity: 0.5;    
 }
-
-// .number-app::after::after{
-//     content: '';
-//     display: block;
-//     position: absolute;
-//     border-left: 10px solid transparent;
-//     border-right: 10px solid transparent;
-//     border-top: 20px solid #4C4D4F;
-// }
 
 .number-app-two{
     position: absolute;
@@ -192,6 +174,296 @@
     align-items: center;
     color: #4C4D4F;
     top: 300px;
-    left: 0;
+    left: 0; 
+}
+
+
+@media (max-width: 1221px){
+    .partners-business{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .deliveries{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .become__partner{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .header-business{
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+        margin-bottom: 4rem;
+    }
+        
+    .cards-business{
+        flex-basis: 80%;
+        padding-bottom: 3rem;
+    }
+
+    .cards-business:last-child {
+        padding-bottom: 0;
+    }
     
+    .title-business{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    .text-business{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .title-deliveries{
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+        margin-bottom: 6rem;
+    }
+
+    // To become partner
+
+    .title-become__partner{
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+        margin-bottom: 2rem;
+    }   
+    .text-become__partner{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .title-application{
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    
+    .title-application:first-child{
+        padding-top: 2.5rem;
+    }
+    
+    .text-application{
+        font-size: 1rem;
+        line-height: 1.6rem;
+        width: 100%;
+    }
+    
+    .btn-application{
+        margin-top: 1.5rem;
+        border: none;
+        background: rgba(176, 205, 139, 0.5);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.37rem;
+        line-height: 1.8rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+    .partners-business{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .deliveries{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .become__partner{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .header-business{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .img-business {
+        margin-bottom: 3rem;
+        width: 4rem;
+    }
+    .center-tag {
+        height: 2rem;
+        padding-bottom: 5rem;
+    }
+    .img-three {
+        width: 4rem;
+        
+    }
+
+    .cards-business:last-child {
+        padding-bottom: 0;
+    }
+    
+    .title-business{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    .text-business{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+    // deliveries
+    .deliveries{
+        margin-top: 7rem;
+    }
+    .title-deliveries{
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .title-become__partner {
+        font-size: 1rem;
+        line-height: 1.4rem;
+        margin-bottom: 2rem;
+    }
+    .text-become__partner {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+
+
+
+
+
+
+
+    .btn-application{
+        margin-top: 1.5rem;
+        border: none;
+        background: rgba(176, 205, 139, 0.5);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.37rem;
+        line-height: 1.8rem;
+        text-align: center;
+        margin-left: 3.8rem;
+        margin-bottom: 13rem;
+    }
+
+    .title-application:first-child {
+        padding-top: 2rem;
+    }
+    .wrapper{
+        margin-top: 1.8rem;
+        margin-left: 0;
+    }
+    .number-app{
+        position: relative;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: rgba(176, 205, 139, 0.25);
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C4D4F;
+        top: 30px;
+        left: 125px; 
+    }
+    
+    .number-app::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border: 2px dashed #4C4D4F;
+        height: 100px;
+        top: 320px;
+        left: 35px;
+        opacity: 0.5;    
+    }
+    
+    .number-app-two{
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: rgba(176, 205, 139, 0.25);
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C4D4F;
+        top: 470px;
+        left: 125px; 
+    }
+    .pzeo{
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media(max-width: 320px) {
+    .btn-application{
+        margin-left: 2rem;
+    }
+
+    .title-application:first-child {
+        padding-top: 2rem;
+    }
+    .wrapper{
+        margin-top: 1.8rem;
+        margin-left: 0;
+    }
+    .number-app{
+        position: relative;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: rgba(176, 205, 139, 0.25);
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C4D4F;
+        top: 30px;
+        left: 100px; 
+    }
+    
+    .number-app::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border: 2px dashed #4C4D4F;
+        height: 100px;
+        top: 320px;
+        left: 35px;
+        opacity: 0.5;    
+    }
+    
+    .number-app-two{
+        position: absolute;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        background: rgba(176, 205, 139, 0.25);
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #4C4D4F;
+        top: 470px;
+        left: 100px; 
+    }
 }

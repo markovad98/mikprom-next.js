@@ -24,38 +24,7 @@ const Footer = () => {
             info@mikprom.ru
           </li>
         </ul>
-        <div className="social">
-        <div className="social-icons">
-          <img
-            src={require("../public/images/icons/fb.svg")}
-            alt="facebook"
-            className="social-icon"
-          />
-          <img
-            src={require("../public/images/icons/inst.svg")}
-            alt="instagramm"
-            className="social-icon"
-          />
-          <img
-            src={require("../public/images/icons/youtube.svg")}
-            alt="youtube"
-            className="social-icon"
-          />
-          <img
-            src={require("../public/images/icons/vk.svg")}
-            alt="vkontakte"
-            className="social-icon"
-          />
-        </div>
-        <img
-          className="logo-footer"
-          src={require("../public/images/logos/mikpromLogo.svg")}
-          alt="logo"
-        />
-        <p className="copyright">
-          © 2020, Компания «МИКПРОМ». <br /> Все права защищены
-        </p>
-        </div>
+        
       </section>
       <section className="footer-contacts--second footer-section">
         <h4 className="contacts">Адрес</h4>
@@ -77,6 +46,46 @@ const Footer = () => {
           <li>Контакты</li>
         </ul>
       </section>
+      <div className="social">
+        <div className="social-icons">
+          <a href="https://www.facebook.com/ooomikprom/?modal=admin_todo_tour" target="blank">
+            <img
+            src={require("../public/images/icons/fb.svg")}
+            alt="facebook"
+            className="social-icon"
+          />
+          </a>
+          <a href="https://www.instagram.com/mikprom/" target="blank">
+          <img
+            src={require("../public/images/icons/inst.svg")}
+            alt="instagramm"
+            className="social-icon"
+          />
+          </a>
+          <a href="https://www.youtube.com/channel/UCiCufEUCSmAVxjC9bfaCLRQ" target="blank">
+          <img
+            src={require("../public/images/icons/youtube.svg")}
+            alt="youtube"
+            className="social-icon"
+          />
+          </a>
+          <a href="https://vk.com/club194548204">
+          <img
+            src={require("../public/images/icons/vk.svg")}
+            alt="vkontakte"
+            className="social-icon"
+          />
+          </a>
+        </div>
+        <img
+          className="logo-footer"
+          src={require("../public/images/logos/mikpromLogo.png")}
+          alt="logo"
+        />
+        <p className="copyright">
+          © 2020, Компания «МИКПРОМ». <br /> Все права защищены
+        </p>
+        </div>
       </section>
     </footer>
   );

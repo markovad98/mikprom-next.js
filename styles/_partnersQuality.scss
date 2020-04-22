@@ -2,31 +2,29 @@
 @import "mixins";
 
 .title-header{
-    margin-top: 89px;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
 }
 
 .title-patner{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
+    @include section-title();
     color: #4C4D4F;
     text-transform: uppercase;
 }
 
 .twoline{
-    padding-top: 10px;
+    padding-top: 0.8rem;
 }
 
 .text-partner{
-    margin-top: 28px;
-    font-size: 26px;
-    line-height: 40px;
+    margin-top: 1.7rem;
+    @include text();
     color: #4C4D4F;
 }
 
 
 .aboutus{
-    margin-top: 46px;
+    margin-top: 2.8rem;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -34,28 +32,154 @@
 }
 
 .cards-aboutus{
-    padding: 30px;
+    padding: 1.8rem;
     flex-basis: 40%;;
     flex-shrink: 0;
 }
 
 .icon-card{
-    width: 25%;
+    width: 5.5rem;
     display:block;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     
+}
+.width-block{
+    height: 5rem;
+    margin-bottom: 2rem;
+}
+
+.mb{
+    margin-bottom: 3rem;
+}
+
+.location {
+    width: 5rem;
 }
 
 .title-card{
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 40px;
+    @include subtitle();
     color: #4C4D4F;
     text-transform: uppercase;
 }
 
 .text-card{
-    font-size: 19px;
-    line-height: 27px;
+    @include text();
     color: #4C4D4F;
+}
+
+@media (max-width: 1341px){
+    .title-header{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
+@media (max-width: 890px){
+    .title-header{
+        padding-top: 2rem;
+    }
+    .title-patner{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .text-partner{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .icon-card{
+        width: 5rem;
+        margin-bottom: 1rem;
+        
+    }
+    .width-block{
+        height: 4.4rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .mb{
+        margin-bottom: 3rem;
+    }
+    
+    .location {
+        width: 4.5rem;
+    }
+    
+    .title-card{
+        font-size: 1.1rem;
+        line-height: 2rem;
+    }
+    
+    .text-card{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .cards-aboutus{
+        padding: 1.8rem;
+        flex-basis: 47%;;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 731px) {
+    .title-patner{
+        font-size: 1.3rem;
+        line-height: 1.6rem;
+    }
+    .text-partner{
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+    .cards-aboutus{
+        padding: 1.8rem;
+        flex-basis: 80%;;
+        flex-shrink: 0;
+    }
+}
+
+@media (max-width: 429px) {
+    .title-header{
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .title-patner{
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+    .text-partner{
+        font-size: 0.8rem;
+        line-height: 1.5rem;
+    }
+    .twoline{
+        padding-top: 0.5rem;
+    }
+    .icon-card{
+        width: 3rem;
+    }
+    .width-block{
+        height: 4.4rem;
+        margin-bottom: 0;
+    }
+    
+    .mb{
+        margin-bottom: 0;
+    }
+    
+    .location {
+        width: 3rem;
+    }
+    
+    .title-card{
+        font-size: 1rem;
+        line-height: 2rem;
+    }
+    
+    .text-card{
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+    }
+    .cards-aboutus{
+        padding: 1rem;
+    }
 }

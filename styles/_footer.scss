@@ -12,8 +12,14 @@
 .footer-wrapp{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
-
+.footer-section {
+    width: 27%;
+}
+.social{
+    margin-top: -13rem;
+}
 .logo-footer{
     width: 249px;
     height: 32px;
@@ -69,18 +75,25 @@
     margin-top: 1.3rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 2rem;
 }
 
 .social-icon{
-    width: 15%;
+    width: 2.7rem;
 }
 
 .copyright{
 margin-top: 1.6rem;
 }
 
-@media (max-width: 731px){
+@media (max-width: 1236px){
+    .footer{
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+@media (max-width: 800px){
     .footer{
         margin-top: 16.25rem;
     }
@@ -88,11 +101,14 @@ margin-top: 1.6rem;
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        
+    }
+    .social{
+        margin-left: 2rem;
+        margin-top: -5rem;
     }
     .footer-section {
         width: 100%;
-        margin-left: 3rem;
+        margin-left: 2rem;
     }
     .social-icons{
         margin-top: 1.3rem;
@@ -101,7 +117,7 @@ margin-top: 1.6rem;
         margin-bottom: 2rem;
     }
     .social-icon{
-        width: 10%;
+        width: 3rem;
         padding-right: 1.2rem;
     }
     .social {
@@ -126,19 +142,13 @@ margin-top: 1.6rem;
 
 @media (max-width: 470px){
     .social-icon{
-        width: 12%;
-        padding-right: 1.2rem;
-    }
-}
-@media (max-width: 470px){
-    .social-icon{
-        width: 12%;
+        width: 2.5rem;
         padding-right: 1.2rem;
     }
 }
 @media (max-width: 360px){
     .social-icon{
-        width: 15%;
+        width: 2.5rem;
         padding-right: 1.2rem;
     }
 }

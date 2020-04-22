@@ -3,6 +3,7 @@ import React from 'react';
 const ProductSections = () => {
     return (
         <section className="bg-grey">
+            <div className="wrapp">
         <section className="product-sections container">
             <section className="section-nav">
                     <nav className="nav active">Куриная разделка</nav>
@@ -204,7 +205,7 @@ const ProductSections = () => {
                 </section>
 
             </section> {/* products */}
-
+            </div>
         </section>
         )
     }

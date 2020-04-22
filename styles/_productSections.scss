@@ -110,6 +110,10 @@
   text-transform: uppercase;
 }
 
+.btn-basket:hover {
+  background: rgba(150, 192, 94, 0.5);
+}
+
 .food-counter {
   display: flex;
   justify-content: space-between;
@@ -146,6 +150,10 @@
 
 
 @media (max-width: 1237px){
+  .wrapp{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
   .product-price {
     display: flex;
     flex-direction: column;
@@ -294,6 +302,10 @@
   } 
 }
 @media (max-width: 438px){
+  .wrapp{
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
   .nav {
     display: inline;
     padding-right: 1rem;

@@ -4,71 +4,59 @@
 
 
 .title-contacts{
-    padding: 100px 0;
-    font-weight: bold;
-    font-size: 40px;
-    line-height: 48px;    
+    padding: 4rem 0;
+    @include section-title();   
 }
 
 .wrapper-contacts{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    padding: 0;
-}
+    flex-wrap: wrap;
+    padding: 3rem 0;
 
-
-
-.contacts-block{
-    flex-basis: 30%; 
-    margin-left: 100px;
 }
 
 .icon-communication{
-    width: 47px;
-    height: 80px;
-    padding-bottom: 20px;
+    width: 2rem;
+    padding-bottom: 1.25rem;
 }
-
+.email{
+    width: 3rem;
+    padding-bottom: 1.4rem;
+}
 .title-communication{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 43px;
-    padding-bottom: 15px;
+    @include subtitle();
+    padding-bottom: 0.9rem;
 }
 
 .text-communication{
-    font-size: 26px;
-    line-height: 39px;
+    @include text();
 }
 
 .text-number{
-    font-size: 26px;
-    line-height: 39px;
+    @include text();
 }
 
 b {
     font-weight: bold;
 }
 
-
 .department{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: 150px;
-    margin-top: 150px;
-    
+    margin-left: 0.6rem;
+    margin-top: 9.3rem;
 }
 
-
-
 .department-title{
-    width: 50%;
-    padding-bottom: 50px;
- 
-
+    flex-basis: 34%;
+    padding-bottom: 3.12rem;
+    padding-right: 0;
+    margin-right: 2rem;
+    margin-left: 2rem;
 }
 
 .arrow-com{
@@ -87,50 +75,50 @@ b {
 }
 
 .phone-dep{
-    font-size: 26px;
-    line-height: 39px;
+    @include text();
 }
 
+// feedback-contacts
 
 .feedback-contacts{
-    margin-top: 100px;
+    margin-top: 6.25rem;
     display: flex;
     justify-content: space-between;
-}
-
-.fill{
-    
+    padding: 3rem 0;
 }
 
 .border-left{
     position: relative;
-    
 }
 
 .border-left::after {
     content: '';
     position: absolute;
     background: #C4C4C4;
-    width: 6px;
+    width: 3px;
     height: 250px;
     top: 0;
-    left: 700px;
+    left: 600px;
 }
 
+.fill{
+    width: 40%;
+}
 
 .title-fill{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 43px;
+    @include section-title();
+    margin-bottom: 1rem;
 }
 
 .subtitle-fill{
-    font-size: 26px;
-    line-height: 39px;
+    @include text();
     width: 60%;
 }
 
 .btn-fill{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
     margin-top: 70px;
     font-size: 30px;
     line-height: 31px;
@@ -139,7 +127,12 @@ b {
     height: 70px;
     background: rgba(176, 205, 139, 0.5);
     border: none;
-    color: #4C4D4F
+    color: #4C4D4F;
+    cursor: pointer;
+}
+
+.btn-fill:hover {
+    background: rgba(150, 192, 94, 0.5);
 }
 
 .icon-pen{
@@ -148,17 +141,173 @@ b {
 }
 
 .number-phone{
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 53px;
-    margin-top: 20px;
+    @include section-title();
+    margin-top: 1.25rem;
     color: #CF686F;   
 }
 
 .map-geo{
-    margin-top: 160px;
+    padding-top: 8rem;
 }
 
-.map-width{
-    width: 100%;
+
+@media(max-width: 1222px){
+    .title-contacts{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .wrapper-contacts{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .department{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .feedback-contacts{
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .border-left::after {
+        content: '';
+        display: none;
+    }
+}
+@media(max-width: 1222px){
+    .title-fill {
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+    }
+    .number-phone {
+        font-size: 1.5rem;
+    }
+    .btn-fill {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 4rem;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        text-align: center;
+        width: 18rem;
+        height: 4.37rem;
+        
+    }
+}
+
+@media(max-width: 770px){
+    .contacts-block{
+        flex-basis: 40%;
+        padding-bottom: 2rem;
+    }
+    .department-title{
+        padding-left: 2rem;
+        flex-basis: 70%;
+    }
+    .feedback-contacts{
+        margin-top: 6.25rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .fill{
+        flex-basis: 70%;
+    }
+    .subtitle-fill {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        width: 100%;
+    }
+    .btn-fill {
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width: 520px){
+    .contacts-block{
+        flex-basis: 80%;
+        padding-bottom: 2rem;
+    }
+}
+
+@media(max-width: 360px){
+    .title-contacts{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .wrapper-contacts{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .department{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+
+    .feedback-contacts{
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+    .title-contacts {
+        padding: 3rem 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+    }
+    .icon-communication {
+        width: 1rem;
+        padding-bottom: 1.25rem;
+    }
+    .title-communication {
+        font-size: 1rem;
+        padding-bottom: 0.5rem;
+    }
+    .text-communication {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .text-number {
+        font-size: 1rem;
+        line-height: 1.8rem;
+    }
+    .contacts-block {
+        padding-bottom: 2rem;
+    }
+    .phone-dep {
+        font-size: 0.8rem;
+        line-height: 1.8rem;
+    }
+    .title-fill {
+        font-size: 1.2rem;
+        font-weight: bold;
+        line-height: 2rem;
+        width: 157%;
+    }
+    .subtitle-fill {
+        font-size: 1rem;
+        line-height: 1.8rem;
+        width: 150%;
+    }
+    .number-phone {
+        font-size: 1.2rem;
+    }
+    .btn-fill {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        margin-top: 4rem;
+        margin-left: 2.7rem;
+        font-size: 1.2rem;
+        line-height: 1.9rem;
+        text-align: center;
+        width: 12rem;
+        height: 3rem;
+    }
 }

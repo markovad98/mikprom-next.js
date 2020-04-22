@@ -1,11 +1,13 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react";
 
 const ContactsInfo = () => {
   return (
-    <section>
-      <section className="contacts-info container">
-        <h2 className="title-contacts">КОНТАКТЫ</h2>
-        <section className="wrapper-contacts">
+    <section className="indent">
+      <section className="contacts-info ">
+        <h2 className="title-contacts container">КОНТАКТЫ</h2>
+        <div className="bg-grey">
+        <section className="wrapper-contacts container">
           <div className="contacts-block">
             <img
               className="icon-communication"
@@ -15,7 +17,8 @@ const ContactsInfo = () => {
             <h3 className="title-communication">АДРЕС</h3>
 
             <ul className="text-communication">
-              <li>Саратовская область, Энгельсский р-н, </li>
+              <li>Саратовская область,</li>
+                <li>Энгельсский р-н, </li>
               <li>р.п. Приволжский, </li>
               <li> ул. Гагарина 1/1</li>
             </ul>
@@ -34,7 +37,7 @@ const ContactsInfo = () => {
 
           <div className="contacts-block">
             <img
-              className="icon-communication"
+              className="icon-communication email"
               src={require("../public/images/greenIcons/messageGreenIcon.svg")}
               alt="messageGreenIcon"
             />
@@ -42,8 +45,9 @@ const ContactsInfo = () => {
             <p className="text-communication">info@mikprom.ru</p>
           </div>
         </section>
+        </div>
 
-        <section className="department">
+        <section className="department container">
           <div className="department-title">
             <h3 className="title-communication arrow-com">
               ОТДЕЛ ОПТОВЫХ ПРОДАЖ
@@ -100,8 +104,9 @@ const ContactsInfo = () => {
           </div>
         </section>
 
-        <section className="feedback-contacts">
-          <div className="fill border-left">
+        <div className="bg-grey">
+        <section className="feedback-contacts container">
+          <div className="fill border-left ">
             <h2 className="title-fill">ФОРМА ОБРАТНОЙ СВЯЗИ</h2>
             <p className="subtitle-fill">
               Заполните форму обратной связи и получите ответы на свои вопросы.
@@ -121,15 +126,16 @@ const ContactsInfo = () => {
             <p className="number-phone">8 (800) 234 38 68</p>
           </div>
         </section>
+        </div>
       </section>
 
-      <div className="map-geo">
+      <div className="map-geo container">  
         <iframe
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a24cadd678ca982678aa337ecc957877be022ed0422d149058cf0b708105184&amp;source=constructor"
           width="100%"
-          height="612"
-          frameBorder="0"
-        ></iframe>
+          height="512"
+          frameBorder="0">
+        </iframe>
       </div>
     </section>
   );

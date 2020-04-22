@@ -73,6 +73,9 @@
     &-button {
       @include green-button()
     }
+    &-button:hover {
+      background: rgba(150, 192, 94, 0.5);
+    }
   }
 
 
