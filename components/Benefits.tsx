@@ -25,7 +25,7 @@ const Benefits = () => {
   ];
 
   return (
-    <div className="benefits-container">
+    <div className="container benefits-container">
       <section className="benefits">
         {benefitsList.map(({ title, img, iconSize }, idx) => (
           <article key={idx} className="benefits-item">

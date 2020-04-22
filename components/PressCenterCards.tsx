@@ -1,83 +1,62 @@
-import React from "react";
+import React, { useContext, useState } from "react";
+import Pagination from "react-paginate";
+import { NewsContext } from "../context/NewsContext";
 
 const PressCenterCards = () => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [news] = useContext(NewsContext);
+  const func = ({ selected }: { selected: number }) => {
+    setCurrentPage(3 * selected);
+  };
+
   return (
     <section className="press-center container">
       <h2 className="title-center">ПРЕСС-ЦЕНТР</h2>
       <section className="press-center-cards">
+        {news
+          .slice(currentPage, currentPage + 3)
+          .map(({ img, time, text }: any, idx: any) => (
+            <article key={idx} className="card-center">
+              <img
+                className="img-card"
+                src={img}
+                alt="Мы расширили географию поставок, выйдя на новый уровень"
+              />
+              <div className="wrapper-info">
+                <p className="data-card">{time}</p>
+                <p className="text-info">{text}</p>
+              </div>
+            </article>
+          ))}
 
-        <article className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/1.svg")} alt="Мы расширили географию поставок, выйдя на новый уровень"/>
-          <div className="wrapper-info">
-            <p className="data-card">27.02.2020</p>
-            <p className="text-info">Мы расширили географию поставок, выйдя на новый уровень</p>
-          </div>
-        </article>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/2.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">24.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” запустила линейку продукции для самых маленьких</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/3.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">20.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” приобрела новое оборудование для...</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/4.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">27.02.2020</p>
-            <p className="text-info">Мы расширили географию поставок, выйдя на новый уровень</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/5.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">24.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” запустила линейку продукции для самых маленьких</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/6.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">20.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” приобрела новое оборудование для...</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/7.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">27.02.2020</p>
-            <p className="text-info">Мы расширили географию поставок, выйдя на новый уровень</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/8.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">24.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” запустила линейку продукции для самых маленьких</p>
-          </div>
-        </div>
-
-        <div className="card-center">
-          <img className="img-card" src={require("../public/images/press-center/9.svg")} alt="img"/>
-          <div className="wrapper-info">
-            <p className="data-card">20.02.2020</p>
-            <p className="text-info">Компания “МИКПРОМ” приобрела новое оборудование для...</p>
-          </div>
-        </div>
-
+        <Pagination
+          previousLabel={
+            currentPage !== 0 && (
+              <img
+                style={{ transform: "rotate(180deg)", width: "24px" }}
+                src={require("../public/images/icons/paginateArrow.png")}
+                alt=""
+              />
+            )
+          }
+          nextLabel={
+            currentPage + 3 !== news.length && (
+              <img
+                style={{ width: "24px" }}
+                src={require("../public/images/icons/paginateArrow.png")}
+                alt=""
+              />
+            )
+          }
+          breakLabel={"..."}
+          breakClassName={"break-me"}
+          pageCount={news.length / 3}
+          marginPagesDisplayed={2}
+          pageRangeDisplayed={1}
+          onPageChange={func}
+          containerClassName={"pagination"}
+          activeClassName={"active"}
+        />
       </section>
     </section>
   );
