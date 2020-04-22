@@ -38,20 +38,20 @@
   box-sizing: border-box;
   outline: none;
   padding: 0;
-	margin: 0;
-	border: 0;
+  margin: 0;
+  border: 0;
 }
 
 html {
   width: 100%;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   width: 100%;
   height: 100%;
   color: #4c4d4f;
-  font-size: 16px;
   font-family: Montserrat, "sans-serif";
   background-color: $white;
   font-weight: lighter;
@@ -62,11 +62,44 @@ a {
 }
 
 .container {
-  // margin: 3rem 6rem;
- 
   max-width: 1170px;
-  margin: auto;
+  margin: 0 auto;
 }
+
+@media(max-width: 1320px) {
+  html {
+    font-size: 14px;
+  }
+  .container {
+    max-width: 920px;
+  }
+}
+
+@media(max-width: 1024px) {
+  html {
+    font-size: 12px;
+  }
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media(max-width: 840px) {
+  html {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 596px;
+  }
+}
+
+@media(max-width: 620px) {
+  .container {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+  }
+}
+
 
 .label-star {
   color: red;
