@@ -11,28 +11,12 @@ const CertificateCarousel = () => {
           interval={3000}
           infiniteLoop
           showArrows={true}
+          dynamicHeight
         >
-          <div
-            style={{
-              width: "500px",
-              height: "500px",
-              backgroundColor: "black"
-            }}
-          ></div>
-          <div
-            style={{
-              width: "500px",
-              height: "500px",
-              backgroundColor: "brown"
-            }}
-          ></div>
-          <div
-            style={{
-              width: "500px",
-              height: "500px",
-              backgroundColor: "silver"
-            }}
-          ></div>
+            <img src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_1.jpg')} alt=""/>
+            <img src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_2.jpg')} alt=""/>
+            <img src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020.jpeg')} alt=""/>
+            <img src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020_prilozhenie_.jpeg')} alt=""/>
         </ReactCarousel>
       </div>
     </section>
