@@ -98,7 +98,7 @@ b {
     width: 3px;
     height: 250px;
     top: 0;
-    left: 600px;
+    left: 560px;
 }
 
 .fill{
@@ -106,7 +106,7 @@ b {
 }
 
 .title-fill{
-    @include section-title();
+    @include subtitle();
     margin-bottom: 1rem;
 }
 
@@ -120,7 +120,7 @@ b {
     font-style: normal;
     font-weight: normal;
     margin-top: 70px;
-    font-size: 30px;
+    font-size: 1.5rem;
     line-height: 31px;
     text-align: center;
     width: 308px;
@@ -136,7 +136,7 @@ b {
 }
 
 .icon-pen{
-    width: 30px;
+    width: 1.7rem;
     margin-right: 10px;
 }
 
@@ -233,6 +233,28 @@ b {
         flex-basis: 80%;
         padding-bottom: 2rem;
     }
+    .title-contacts {
+        padding: 3rem 0;
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 2.4rem;
+    }
+    .icon-communication {
+        width: 1.4rem;
+        padding-bottom: 1.25rem;
+    }
+    .title-communication {
+        font-size: 1.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .text-communication {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+    .text-number {
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+    }
 }
 
 @media(max-width: 360px){
@@ -257,41 +279,41 @@ b {
     }
     .title-contacts {
         padding: 3rem 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
         font-weight: bold;
         line-height: 2.4rem;
     }
     .icon-communication {
-        width: 1rem;
+        width: 1.4rem;
         padding-bottom: 1.25rem;
     }
     .title-communication {
-        font-size: 1rem;
+        font-size: 1.5rem;
         padding-bottom: 0.5rem;
     }
     .text-communication {
-        font-size: 1rem;
+        font-size: 1.4rem;
         line-height: 1.8rem;
     }
     .text-number {
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
     }
     .contacts-block {
         padding-bottom: 2rem;
     }
     .phone-dep {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
     }
     .title-fill {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         font-weight: bold;
         line-height: 2rem;
         width: 157%;
     }
     .subtitle-fill {
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.8rem;
         width: 150%;
     }
@@ -305,9 +327,12 @@ b {
         margin-top: 4rem;
         margin-left: 2.7rem;
         font-size: 1.2rem;
-        line-height: 1.9rem;
+        line-height: 1.2rem;
         text-align: center;
         width: 12rem;
         height: 3rem;
+    }
+    .icon-pen{
+        display: none;
     }
 }
