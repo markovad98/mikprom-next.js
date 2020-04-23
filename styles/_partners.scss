@@ -5,7 +5,8 @@
   padding: 5rem 0;
 
   &-title {
-    @include section-title();
+    font-size: 2.5rem;
+    font-weight: bold;
     margin-bottom: 1.5rem;
   }
 

@@ -66,12 +66,12 @@ b {
     content: "";
     position: absolute;
     top: 5px;
-    left: -45px;
+    left: -35px;
     width: 0;
 	height: 0;
-	border-top: 10px solid transparent;
-	border-left: 20px solid #B0CD8B;
-	border-bottom: 10px solid transparent;
+	border-top: 5px solid transparent;
+	border-left: 10px solid #B0CD8B;
+	border-bottom: 5px solid transparent;
 }
 
 .phone-dep{
@@ -148,6 +148,19 @@ b {
 
 .map-geo{
     padding-top: 8rem;
+}
+
+
+@media(max-width: 1671px){
+    .border-left::after {
+        content: '';
+        position: absolute;
+        background: #C4C4C4;
+        width: 3px;
+        height: 250px;
+        top: 0;
+        left: 480px;
+    }
 }
 
 

@@ -5,22 +5,22 @@ const Benefits = () => {
     {
       title: "Куриная разделка \n оптом и в розницу",
       img: require("../public/images/greenIcons/medalIcon.png"),
-      iconSize: { width: "62px", height: "88px" }
+      iconSize: { width: "3.8rem", height: "" }
     },
     {
       title: "Высокое качество \n ГОСТ",
       img: require("../public/images/greenIcons/cartBigGreenIcon.png"),
-      iconSize: { width: "94px", height: "86px" }
+      iconSize: { width: "5.5rem", height: "" }
     },
     {
       title: "Свое \n производство",
       img: require("../public/images/greenIcons/wheatGreenIcon.png"),
-      iconSize: { width: "43x", height: "86px" }
+      iconSize: { width: "2.4rem", height: "" }
     },
     {
       title: "Отгрузка \n от одного дня",
       img: require("../public/images/greenIcons/truckBigGreenIcon.png"),
-      iconSize: { width: "147px", height: "91px" }
+      iconSize: { width: "7.8rem", height: "" }
     }
   ];
 
@@ -31,7 +31,7 @@ const Benefits = () => {
         {benefitsList.map(({ title, img, iconSize }, idx) => (
           <article key={idx} className="benefits-item">
             <div className="benefits-item__img">
-              <img style={iconSize} src={img} alt="" />
+              <img style={iconSize} src={img} alt="" className="img-benefits"/>
             </div>
             <div className="benefits-item__title">{title}</div>
           </article>
