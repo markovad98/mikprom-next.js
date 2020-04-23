@@ -9,6 +9,7 @@
   &-wrapper {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &-item {
@@ -16,7 +17,7 @@
     flex-direction: column;
     max-width: 307px;
 
-    >* {
+    > * {
       margin-bottom: 1rem;
     }
 
@@ -26,7 +27,7 @@
     }
 
     &__time {
-      color: $grey
+      color: $grey;
     }
 
     &__text {
@@ -39,7 +40,6 @@
       padding: 0.4rem 1.2rem;
       font-size: 1.2rem;
     }
-
   }
 
   .pagination {
@@ -52,7 +52,7 @@
       font-weight: bold;
     }
 
-    >* {
+    > * {
       margin-right: 1rem;
       cursor: pointer;
     }
@@ -61,6 +61,24 @@
       margin-right: 0;
     }
   }
+}
 
+@media (max-width: 1170px) {
+  .press-center {
+    &-wrapper {
+      justify-content: center;
+    }
 
+    &-item {
+      margin: 20px;
+    }
+
+    &-title {
+      text-align: center;
+    }
+
+    .pagination {
+      margin: 3rem 0;
+    }
+  }
 }

@@ -37,6 +37,7 @@ const Feedback = () => {
               <option>Выберите тему сообщения34</option>
           </select>
         </div>
+          <button className="feedback-form-button feedback-form-button_mobile">Отправить</button>
       </form>
     </section>
   );

@@ -1,0 +1,126 @@
+@import "variables";
+@import "mixins";
+
+.mobile-header {
+  display: none;
+  padding: 22px 0;
+
+  &-nav {
+    transition: 0.3s ease-in;
+    height: 340px;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+
+      &__item {
+        margin-bottom: 2rem;
+      }
+
+      &__link {
+        font-size: 2rem;
+        color: $grey;
+
+      }
+    }
+  }
+
+  &-nav_hide {
+    opacity: 0;
+    height: 0;
+  }
+
+  &-logo {
+    &__img {
+      width: 152px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  &-cart {
+    margin-right: 1rem;
+    position: relative;
+    cursor: pointer;
+
+    &__img {
+      width: 26px;
+      height: 23px;
+    }
+
+    &__circle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      background: $green;
+      width: 16px;
+      height: 16px;
+      border-radius: 100%;
+      top: 15px;
+      left: -5px;
+      color: white;
+      font-size: 10px;
+    }
+  }
+
+  &-burger-menu {
+    z-index: 999;
+    cursor: pointer;
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+
+    &__item {
+      position: absolute;
+      width: 20px;
+      height: 2px;
+      background-color: $grey;
+      left: 0;
+      top: 0;
+      transition: 0.2s ease-in;
+      transform-origin: center;
+    }
+
+    &__item:nth-child(2) {
+      top: 7px;
+    }
+
+    &__item:nth-child(3) {
+      top: 14px;
+    }
+  }
+
+  &-search {
+    &__icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &-cart-search {
+    display: flex;
+  }
+ }
+
+@media (max-width: 1170px) {
+  .mobile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.mobile-header-burger-menu_active .mobile-header-burger-menu__item:nth-child(1) {
+  transform: rotate(45deg) translateY(10px);
+}
+
+.mobile-header-burger-menu_active .mobile-header-burger-menu__item:nth-child(2) {
+    height: 0;
+    width: 0;
+}
+
+.mobile-header-burger-menu_active .mobile-header-burger-menu__item:nth-child(3) {
+  transform: rotate(-45deg) translateY(-10px);
+}
