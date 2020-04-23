@@ -2,8 +2,8 @@ import React from 'react';
 
 const PartnersThreeBlocks = () => {
     return (
-        <section className="container">
-            <section className="partners-business">
+        <section className="">
+            <section className="partners-business container">
                     <h2 className="header-business">ПАРТНЕРСТВО С МИКРОБИЗНЕСОМ </h2>
 
                 <div className="cards">
@@ -35,11 +35,15 @@ const PartnersThreeBlocks = () => {
             </section>
 
             <section className="deliveries">
-                <h2 className="title-deliveries">ГЕОГРАФИЯ ПОСТАВОК</h2>
-                <img className="map" src={require("../public/images/map.svg")} alt="map"/>
+                <h2 className="title-deliveries container">ГЕОГРАФИЯ ПОСТАВОК</h2>
+                <div className="bg-grey inlin">
+                    <div className="container">
+                        <img className="map" src={require("../public/images/map.svg")} alt="map"/>
+                    </div>
+                </div>
             </section>{/* /.deliveries */}
 
-            <section className="become__partner">
+            <section className="become__partner container">
                 <h3 className="title-become__partner">СТАТЬ ПАРТНЕРОМ</h3>
                 <p className="text-become__partner">
                     Политика компании “Микпром” отличается гибкостью и демократичностью. Именно поэтому мы всегда 
