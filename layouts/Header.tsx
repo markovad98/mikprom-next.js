@@ -3,8 +3,9 @@ import LocaleSwitcher from "../components/LocaleSwitcher";
 import Link from "next/link";
 import useTranslation from "../hooks/useTranslation";
 
-const Header = () => {
+const Header = (props: any) => {
   const { locale } = useTranslation();
+  console.warn('PROPS: ', props);
 
   const socialIcons = [
     {
@@ -118,7 +119,7 @@ const Header = () => {
           {/*LOCALE + SEARCH*/}
           <section className="header-locale-search">
             <LocaleSwitcher className="header-locale" />
-
+            <i className="fab fa-facebook"></i>
             <article className="header-search">
               <img
                 src={require("../public/images/icons/searchGreyIcon.png")}

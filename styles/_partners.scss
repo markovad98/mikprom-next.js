@@ -2,7 +2,7 @@
 @import "mixins";
 
 .partners {
-  margin: 3rem 0;
+  padding: 5rem 0;
 
   &-title {
     @include section-title();

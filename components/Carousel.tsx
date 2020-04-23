@@ -10,9 +10,9 @@ const Carousel = () => {
       infiniteLoop
       showArrows={true}
     >
-      <img src={require("../public/images/beautyPhotos/Слайд 1.jpg")} />
-      <img src={require("../public/images/beautyPhotos/Слайд 2.jpg")} />
-      <img src={require("../public/images/beautyPhotos/Слайд 3.jpg")} />
+      <img src={require("../public/images/chickenPhotos/sliderChicken.png")} alt='Mikprom chicken' />
+      <img src={require("../public/images/chickenPhotos/chickenSlider2.png")} alt='Микпром курица' />
+      <img src={require("../public/images/chickenPhotos/chickenSlider3.png")} alt='Микпром мясо купить' />
     </ReactCarousel>
   ) : (
     <div>Oops</div>

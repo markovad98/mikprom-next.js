@@ -26,20 +26,20 @@ const CompanyInfo = () => {
         </p>
       </article>
 
-      <section className="company-info-video">
-        <div className="thumb-wrap">
-          <iframe
-            width="1680"
-            height="945"
-            src="https://www.youtube.com/embed/ZeqyVQkswFA"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
+      {/*<section className="company-info-video">*/}
+      {/*  <div className="thumb-wrap">*/}
+      {/*    <iframe*/}
+      {/*      width="1680"*/}
+      {/*      height="945"*/}
+      {/*      src="https://www.youtube.com/embed/ZeqyVQkswFA"*/}
+      {/*      frameBorder="0"*/}
+      {/*      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"*/}
+      {/*      allowFullScreen*/}
+      {/*    ></iframe>*/}
+      {/*  </div>*/}
 
-        <button className="company-info-btn">Заказать партию</button>
-      </section>
+      {/*  <button className="company-info-btn">Заказать партию</button>*/}
+      {/*</section>*/}
     </section>
   );
 };
