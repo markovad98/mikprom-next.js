@@ -28,36 +28,35 @@ const PressCenterCards = () => {
               </div>
             </article>
           ))}
-
-        <Pagination
-          previousLabel={
-            currentPage !== 0 && (
-              <img
-                style={{ transform: "rotate(180deg)", width: "24px" }}
-                src={require("../public/images/icons/paginateArrow.png")}
-                alt=""
-              />
-            )
-          }
-          nextLabel={
-            currentPage + 3 !== news.length && (
-              <img
-                style={{ width: "24px" }}
-                src={require("../public/images/icons/paginateArrow.png")}
-                alt=""
-              />
-            )
-          }
-          breakLabel={"..."}
-          breakClassName={"break-me"}
-          pageCount={news.length / 3}
-          marginPagesDisplayed={2}
-          pageRangeDisplayed={1}
-          onPageChange={func}
-          containerClassName={"pagination"}
-          activeClassName={"active"}
-        />
       </section>
+        <Pagination
+            previousLabel={
+                currentPage !== 0 && (
+                    <img
+                        style={{ transform: "rotate(180deg)", width: "24px" }}
+                        src={require("../public/images/icons/paginateArrow.png")}
+                        alt=""
+                    />
+                )
+            }
+            nextLabel={
+                currentPage + 3 !== news.length && (
+                    <img
+                        style={{ width: "24px" }}
+                        src={require("../public/images/icons/paginateArrow.png")}
+                        alt=""
+                    />
+                )
+            }
+            breakLabel={"..."}
+            breakClassName={"break-me"}
+            pageCount={news.length / 3}
+            marginPagesDisplayed={2}
+            pageRangeDisplayed={1}
+            onPageChange={func}
+            containerClassName={"pagination"}
+            activeClassName={"active"}
+        />
     </section>
   );
 };
