@@ -7,10 +7,22 @@ const Header = () => {
   const { locale } = useTranslation();
 
   const socialIcons = [
-    require("../public/images/icons/inst.png"),
-    require("../public/images/icons/facebook.png"),
-    require("../public/images/icons/vk.png"),
-    require("../public/images/icons/youtube.png")
+    {
+      img: require("../public/images/icons/inst.svg"),
+      link: "https://vk.com/club194548204"
+    },
+    {
+      img: require("../public/images/icons/fb.svg"),
+      link: "https://www.facebook.com/ooomikprom/?modal=admin_todo_tour"
+    },
+    {
+      img: require("../public/images/icons/vk.svg"),
+      link: "https://vk.com/club194548204"
+    },
+    {
+      img: require("../public/images/icons/youtube.svg"),
+      link: "https://www.youtube.com/channel/UCiCufEUCSmAVxjC9bfaCLRQ"
+    }
   ];
 
   const navItems = [
@@ -38,10 +50,14 @@ const Header = () => {
     },
     {
       title: (
-          <div className='header-cart'>
-            <img className='header-cart__img' src={require("../public/images/icons/cart.png")} alt="cart" />
-            <div className='header-cart__circle'>1</div>
-          </div>
+        <div className="header-cart">
+          <img
+            className="header-cart__img"
+            src={require("../public/images/icons/cart.png")}
+            alt="cart"
+          />
+          <div className="header-cart__circle">1</div>
+        </div>
       ),
       path: "/[lang]/cart",
       link: `/${locale}/cart`
@@ -92,13 +108,10 @@ const Header = () => {
 
         <section className="header-social-search">
           <article className="header-social">
-            {socialIcons.map((icon: string, idx: number) => (
-              <img
-                key={idx}
-                src={icon}
-                alt=""
-                className="header-social__item"
-              />
+            {socialIcons.map(({ img, link }, idx: number) => (
+              <a target='_blank' key={idx} href={link}>
+                <img src={img} alt="" className="header-social__item" />
+              </a>
             ))}
           </article>
 
