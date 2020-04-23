@@ -13,10 +13,10 @@ const CertificateCarousel = () => {
           showArrows={true}
           dynamicHeight
         >
-            <img src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_1.jpg')} alt=""/>
-            <img src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_2.jpg')} alt=""/>
-            <img src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020.jpeg')} alt=""/>
-            <img src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020_prilozhenie_.jpeg')} alt=""/>
+            <img className="img-quality" src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_1.jpg')} alt=""/>
+            <img className="img-quality" src={require('../public/images/certifications/Sertefikat_GOST_MiKprom_2.jpg')} alt=""/>
+            <img className="img-quality" src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020.jpeg')} alt=""/>
+            <img className="img-quality" src={require('../public/images/certifications/sertifikat_GOST_20.02.2017-19.02.2020_prilozhenie_.jpeg')} alt=""/>
         </ReactCarousel>
       </div>
     </section>

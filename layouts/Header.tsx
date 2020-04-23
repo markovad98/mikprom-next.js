@@ -110,7 +110,7 @@ const Header = (props: any) => {
         <section className="header-social-search">
           <article className="header-social">
             {socialIcons.map(({ img, link }, idx: number) => (
-              <a target='_blank' key={idx} href={link}>
+              <a target='blank' key={idx} href={link}>
                 <img src={img} alt="" className="header-social__item" />
               </a>
             ))}

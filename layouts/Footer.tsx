@@ -50,28 +50,28 @@ const Footer = () => {
         <div className="social-icons">
           <a href="https://www.facebook.com/ooomikprom/?modal=admin_todo_tour" target="blank">
             <img
-            src={require("../public/images/icons/fb.svg")}
+            src={require("../public/images/icons/facebook.png")}
             alt="facebook"
             className="social-icon"
           />
           </a>
           <a href="https://www.instagram.com/mikprom/" target="blank">
           <img
-            src={require("../public/images/icons/inst.svg")}
+            src={require("../public/images/icons/inst.png")}
             alt="instagramm"
             className="social-icon"
           />
           </a>
           <a href="https://www.youtube.com/channel/UCiCufEUCSmAVxjC9bfaCLRQ" target="blank">
           <img
-            src={require("../public/images/icons/youtube.svg")}
+            src={require("../public/images/icons/youtube.png")}
             alt="youtube"
-            className="social-icon"
+            className="social-icon youtube"
           />
           </a>
           <a href="https://vk.com/club194548204">
           <img
-            src={require("../public/images/icons/vk.svg")}
+            src={require("../public/images/icons/vk.png")}
             alt="vkontakte"
             className="social-icon"
           />

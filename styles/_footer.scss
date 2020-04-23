@@ -74,13 +74,21 @@
 .social-icons{
     margin-top: 1.3rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 2rem;
+
 }
 
 .social-icon{
-    width: 2.7rem;
+    width: 2.4rem;
+    
+}
+.youtube{
+    width: 3rem;
+}
+.social-icon:hover{
+  
 }
 
 .copyright{
@@ -137,6 +145,16 @@ margin-top: 1.6rem;
     }
     .contacts{
         margin-bottom: 0.3rem;
+    }
+    .icon-contacts{
+        width: 10px;
+        height: 15px;
+        margin-right: 1.2rem;
+    }
+    .icon-contacts--mail{
+        width: 15px;
+        height: 10px;
+        margin-right: 1.2rem;
     }
 }
 

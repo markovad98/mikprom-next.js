@@ -25,6 +25,7 @@ const Benefits = () => {
   ];
 
   return (
+    <div className="bg-grey down">
     <div className="container benefits-container">
       <section className="benefits">
         {benefitsList.map(({ title, img, iconSize }, idx) => (
@@ -37,6 +38,7 @@ const Benefits = () => {
         ))}
       </section>
       <button className="benefits-btn">Получить прайс</button>
+    </div>
     </div>
   );
 };
