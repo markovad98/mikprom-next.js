@@ -4,6 +4,7 @@
 .press-center {
   &-title {
     @include section-title();
+    margin-bottom: 2rem;
   }
 
   &-wrapper {
