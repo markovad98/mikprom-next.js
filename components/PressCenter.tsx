@@ -19,7 +19,7 @@ const PressCenter = () => {
           .slice(currentPage, currentPage + 3)
           .map(({ img, time, text }: any, idx: any) => (
             <article key={idx} className="press-center-item">
-              <img src={img} alt={text} className="press-center-item__img" />
+              <a className="img"><img src={img} alt={text} className="press-center-item__img img-op" /></a>
               <span className="press-center-item__time">{time}</span>
               <p className="press-center-item__text">{text}</p>
               <button className="press-center-item__btn btn-read">Читать</button>

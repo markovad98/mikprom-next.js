@@ -37,6 +37,7 @@ const MobileHeader = () => {
 
   return (
     <div className="header-mobile-wrapper">
+      <div className="wrapper-gray">
       <header className="mobile-header container">
         <div
           onClick={handleToggleMenu}
@@ -79,7 +80,8 @@ const MobileHeader = () => {
           </article>
         </section>
       </header>
-
+      </div>
+      
       <nav className={`mobile-header-nav container ${!isActive ? 'mobile-header-nav_hide' : ''}`}>
         <ul className="mobile-header-nav-list">
           {navItems.map(({ title, path, link }, idx) => (

@@ -1,11 +1,11 @@
 @import "variables";
 @import "mixins";
 
+
 .mobile-header {
   display: none;
-  padding: 22px 2rem;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+  padding: 22px 0;
+  
   &-nav {
     transition: 0.3s ease-in;
     height: 340px;

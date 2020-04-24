@@ -26,7 +26,7 @@
     &__img {
       width: 20rem
     }
-
+ 
     &__time {
       color: $grey;
     }
@@ -41,6 +41,9 @@
       padding: 0.4rem 1.2rem;
       font-size: 1.2rem;
     }
+  }
+  img.img-op:hover{
+    opacity: 0.8; 
   }
   .btn-read{
   width: 150px;

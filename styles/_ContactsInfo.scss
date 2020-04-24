@@ -119,12 +119,12 @@ b {
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    margin-top: 70px;
+    margin-top: 40px;
     font-size: 1.5rem;
     line-height: 31px;
     text-align: center;
-    width: 308px;
-    height: 70px;
+    width: 250px;
+    height: 50px;
     background: rgba(176, 205, 139, 0.5);
     border: none;
     color: #4C4D4F;
@@ -160,6 +160,12 @@ b {
         height: 250px;
         top: 0;
         left: 480px;
+    }
+    .map-geo{
+        padding-top: 3rem;
+    }
+    .map-height{
+        height: 400px;
     }
    
 }
