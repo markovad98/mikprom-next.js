@@ -69,9 +69,9 @@ const Footer = () => {
             className="social-icon youtube"
           />
           </a>
-          <a href="https://vk.com/club194548204">
+          <a href="https://vk.com/club194548204" target="blank">
           <img
-            src={require("../public/images/icons/vk.png")}
+            src={require("../public/images/icons/vkk.svg")}
             alt="vkontakte"
             className="social-icon"
           />

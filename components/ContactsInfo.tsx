@@ -134,6 +134,7 @@ const ContactsInfo = () => {
           src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a24cadd678ca982678aa337ecc957877be022ed0422d149058cf0b708105184&amp;source=constructor"
           width="100%"
           height="612"
+          className ="map-height"
           frameBorder="0">
         </iframe>
       </div>

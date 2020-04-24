@@ -4,62 +4,62 @@ export const NewsContext = createContext({} as any);
 
 const articles = [
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/1.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 1"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/2.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 2"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/3.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 3"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/1.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 4"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/2.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 5"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/3.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 6"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/1.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 7"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/2.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 8"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/3.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 9"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/1.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 10"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/2.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 11"
   },
   {
-    img: require("../public/images/beautyPhotos/новости.jpg"),
+    img: require("../public/images/press-center/3.svg"),
     time: "27.02.2020",
     text: "Мы расширили географию поставок, выйдя на новый уровень 12"
   }

@@ -161,6 +161,7 @@ b {
         top: 0;
         left: 480px;
     }
+   
 }
 
 
@@ -188,6 +189,9 @@ b {
     .border-left::after {
         content: '';
         display: none;
+    }
+    .map-height{
+        height: 350px;
     }
 }
 @media(max-width: 1222px){
@@ -227,6 +231,9 @@ b {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .map-height{
+        height: 200px;
     }
     .fill{
         flex-basis: 70%;

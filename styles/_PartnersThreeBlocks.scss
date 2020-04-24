@@ -270,11 +270,11 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
         text-align: center;
-        width: 160px;
-        height: 40px;
+        width: 110px;
+        height: 30px;
     }
 
 .number-app{
@@ -400,11 +400,15 @@
         font-family: Montserrat;
         font-style: normal;
         font-weight: normal;
-        font-size: 1.37rem;
-        line-height: 1.8rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
         text-align: center;
-        margin-left: 3.8rem;
+        margin-left: 9rem;
         margin-bottom: 13rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        width: 110px;
+        height: 30px;
     }
 
     .title-application:first-child {
@@ -466,7 +470,21 @@
 
 @media(max-width: 320px) {
     .btn-application{
-        margin-left: 2rem;
+        margin-top: 1.5rem;
+        border: none;
+        background: rgba(176, 205, 139, 0.5);
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        text-align: center;
+        margin-left: 7rem;
+        margin-bottom: 13rem;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        width: 110px;
+        height: 30px;
     }
 
     .title-application:first-child {

@@ -22,7 +22,7 @@ const PressCenter = () => {
               <img src={img} alt={text} className="press-center-item__img" />
               <span className="press-center-item__time">{time}</span>
               <p className="press-center-item__text">{text}</p>
-              <button className="press-center-item__btn">Читать</button>
+              <button className="press-center-item__btn btn-read">Читать</button>
             </article>
           ))}
       </div>

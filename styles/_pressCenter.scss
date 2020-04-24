@@ -20,11 +20,11 @@
 
     > * {
       margin-bottom: 1rem;
+      font-size: 1.4rem;
     }
 
     &__img {
-      width: 307px;
-      height: 228px;
+      width: 20rem
     }
 
     &__time {
@@ -41,6 +41,9 @@
       padding: 0.4rem 1.2rem;
       font-size: 1.2rem;
     }
+  }
+  .btn-read{
+  width: 150px;
   }
 
   .pagination {
