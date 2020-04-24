@@ -87,20 +87,31 @@ font-family: Montserrat;
     .feedback{
         padding: 0 1rem;
     }
-    .input-indent{
-        width: 15rem;
-    }
+    
     .input-indents{
         min-width: 13rem;
-        
+    }
+    .fb-st{
+        line-height: 2rem;
     }
     .mess {
-       
         margin-bottom: 0.7rem;
         font-size: 1.2rem;
         line-height: 0.8rem;
     }
     .input-inden{
         min-width: 15rem;
+    }
+    .feedback-product{
+        margin-left: 1rem;
+        width: 138%;
+    }
+    .ml-name{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 320px){
+    .feedback-product{
+        width: 26rem;
     }
 }

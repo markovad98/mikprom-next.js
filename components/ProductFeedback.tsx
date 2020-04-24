@@ -4,23 +4,23 @@ const ProductFeedback = () => {
   return (
     <section className="feedback container feedback-f">
       <h3 className="feedback-title title-sub">Заказать пробную партию</h3>
-      <p className="feedback-subtitle">
+      <p className="feedback-subtitle fb-st">
         Убедитесь в качестве продукции по ГОСТу от “МИКПРОМ”.
       </p>
       <span className="feedback-hint">* - поля, обязательные к заполнению</span>
       <form action="" className="feedback-forms">
         <div className="feedback-form-left">
           <label htmlFor="" className="feedback-form__label">
-          <span className="style-form"> Имя <sup className="label-star">*</sup></span>
-            <input type="text" className="feedback-form__input input-indent"/>
+          <span className="style-form ml-name"> Имя <sup className="label-star">*</sup></span>
+            <input type="text" className="feedback-form__input input-indent feedback-product"/>
           </label>
           <label htmlFor="" className="feedback-form__label">
-          <span className="style-form"> Телефон <sup className="label-star">*</sup></span>
-            <input type="tel" name="phone" className="feedback-form__input input-indent" />
+          <span className="style-form ml-name"> Телефон <sup className="label-star">*</sup></span>
+            <input type="tel" name="phone" className="feedback-form__input input-indent feedback-product" />
           </label>
           <label htmlFor="" className="feedback-form__label">
-          <span className="style-form">e-mail</span>
-            <input type="email" className="feedback-form__input input-indent" />
+          <span className="style-form ml-name">e-mail</span>
+            <input type="email" className="feedback-form__input input-indent feedback-product" />
           </label>
         </div>
         <div className="feedback-form-right">

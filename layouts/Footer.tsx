@@ -71,7 +71,7 @@ const Footer = () => {
           </a>
           <a href="https://vk.com/club194548204" target="blank">
           <img
-            src={require("../public/images/icons/vkk.svg")}
+            src={require("../public/images/icons/vk.png")}
             alt="vkontakte"
             className="social-icon"
           />

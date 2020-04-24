@@ -21,7 +21,7 @@ const Header = (props: any) => {
       link: "https://www.youtube.com/channel/UCiCufEUCSmAVxjC9bfaCLRQ"
     },
     {
-      img: require("../public/images/icons/vkk.svg"),
+      img: require("../public/images/icons/vk.png"),
       link: "https://vk.com/club194548204"
     }
   ];
