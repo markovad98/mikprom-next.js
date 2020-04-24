@@ -47,6 +47,11 @@ font-family: Montserrat;
     flex-wrap: wrap;
 }
 
+@media (max-width: 1680px){
+    .input-indent{
+        margin-bottom: 2rem;
+    }
+}
 @media (max-width: 1249px){
     .feedback{
         padding: 0 2rem;
@@ -56,9 +61,6 @@ font-family: Montserrat;
     }
 }
 
-@media (max-width: 1067px){
-    
-}
 
 @media (max-width: 553px){
     .feedback{

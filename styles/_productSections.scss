@@ -148,6 +148,31 @@
   font-size: 15px;
 }
 
+@media (max-width: 1680px){
+  .btn-basket {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    background: rgba(176, 205, 139, 0.5);
+    padding: 0.6rem 1.4rem;
+    border: none;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    margin-bottom: 0.7rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 130px;
+    height: 39px;
+}
+.kg {
+  position: absolute;
+  left: 5.4rem;
+  bottom: -0.4rem;
+  color: #9d9d9e;
+  font-size: 15px;
+}
+}
 
 @media (max-width: 1237px){
   .wrapp{
