@@ -104,14 +104,19 @@ font-family: Montserrat;
     }
     .feedback-product{
         margin-left: 1rem;
-        width: 138%;
+        width: 100%;
     }
     .ml-name{
         margin-left: 1rem;
     }
 }
+@media (max-width: 374px){
+    .feedback-product{
+        width: 145%;
+    }
+}
 @media (max-width: 320px){
     .feedback-product{
-        width: 26rem;
+        width: 159%;
     }
 }
