@@ -117,6 +117,11 @@
     line-height: 2rem; 
 }
 
+@media(max-width: 1680px){
+    .feedback-form__style{
+        width: 35rem;
+    }
+}
 @media(max-width: 1024px){
     .basket{
         margin-left: 1rem;
@@ -244,14 +249,23 @@
     }
 }
 
-@media(max-width: 413px){
-    .feedback-form__input {
-        width: 17rem;
+@media(max-width: 414px){
+    .feedback-form__input{
+        width: 90%;
+        margin-right: 0;
         margin-left: 0;
+    }
+    .right {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .feedback-form__style{
+        width: 100%;
     }
 }
 
-@media(max-width: 376px){
+@media(max-width: 375px){
     .price {
         font-family: Montserrat;
         font-style: normal;
@@ -266,10 +280,24 @@
         font-size: 1.2rem;
         line-height: 2rem;
     }
+    .rightss{
+        width: 50%;
+    }
+    .feedback-form__input{
+        width: 94%;
+        margin-right: 0;
+    }
+    .feedback-form__style{
+        width: 100%;
+    }
 }
 
 @media(max-width: 326px){
     .right{
         width: 50%;
+    }
+    .feedback-form__input{
+        width: 100%;
+        margin-right: 0;
     }
 }
