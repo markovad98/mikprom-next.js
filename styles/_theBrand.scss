@@ -19,11 +19,17 @@
     height: 135px;
     display: block;
     margin: -115px auto;
+    margin-right: 3rem;
 }
 
 .logo-micprom {
     width: 389px;
     height: 49px;
+}
+.logo-brand{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 1690px){
