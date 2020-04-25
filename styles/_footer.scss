@@ -72,20 +72,19 @@
 }
 
 .social-icons{
-    margin-top: 1.3rem;
+    margin-top: 3.3rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     margin-bottom: 2rem;
 
 }
 
 .social-icon{
-    width: 2.4rem;
+    width: 4rem;
+    padding-right: 1.5rem;
 }
-.youtube{
-    width: 3rem;
-}
+
 .social-icon:hover{
   
 }
