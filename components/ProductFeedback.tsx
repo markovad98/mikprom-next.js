@@ -12,15 +12,15 @@ const ProductFeedback = () => {
         <div className="feedback-form-left">
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form ml-name"> Имя <sup className="label-star">*</sup></span>
-            <input type="text" className="feedback-form__input input-indent feedback-product"/>
+            <input type="text" className="feedback-form__input input-indent"/>
           </label>
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form ml-name"> Телефон <sup className="label-star">*</sup></span>
-            <input type="tel" name="phone" className="feedback-form__input input-indent feedback-product" />
+            <input type="tel" name="phone" className="feedback-form__input input-indent" />
           </label>
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form ml-name">e-mail</span>
-            <input type="email" className="feedback-form__input input-indent feedback-product" />
+            <input type="email" className="feedback-form__input input-indent" />
           </label>
         </div>
         <div className="feedback-form-right">
