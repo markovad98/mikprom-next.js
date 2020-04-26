@@ -83,8 +83,7 @@
         line-height: 2rem;
     }
     .text-partner{
-        font-size: 1rem;
-        line-height: 1.6rem;
+        @include text();
     }
     .icon-card{
         width: 5rem;
@@ -105,13 +104,12 @@
     }
     
     .title-card{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
     
     .text-card{
-        font-size: 1rem;
-        line-height: 1.6rem;
+        @include text();
     }
     .cards-aboutus{
         padding: 1.8rem;
@@ -126,8 +124,7 @@
         line-height: 1.6rem;
     }
     .text-partner{
-        font-size: 1rem;
-        line-height: 1.6rem;
+        @include text();
     }
     .cards-aboutus{
         padding: 1.8rem;
@@ -148,8 +145,7 @@
         line-height: 1.7rem;
     }
     .text-partner{
-        font-size: 1.2rem;
-        line-height: 2rem;
+        @include text();
     }
     .twoline{
         padding-top: 0.5rem;
@@ -176,8 +172,7 @@
     }
     
     .text-card{
-        font-size: 1.2rem;
-        line-height: 2rem;
+        @include text();
     }
     .cards-aboutus{
         padding: 1rem;
