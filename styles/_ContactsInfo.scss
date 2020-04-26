@@ -1,7 +1,14 @@
 @import "variables";
 @import "mixins";
 
+.contacts-block {
+    display: flex;
+    flex-direction: column;
 
+    .text-number {
+        color: $grey;
+    }
+}
 
 .title-contacts{
     padding: 4rem 0;

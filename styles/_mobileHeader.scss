@@ -7,6 +7,7 @@
   padding: 22px 0;
   
   &-nav {
+    display: none;
     transition: 0.3s ease-in;
     height: 340px;
 
@@ -124,6 +125,7 @@
     align-items: center;
 
     &-nav {
+      display: flex;
       &-list {
         padding: 0 1.8rem;
         margin-top: 2rem;

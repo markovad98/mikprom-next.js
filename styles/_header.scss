@@ -146,7 +146,6 @@
         color: $white;
         position: relative;
       }
-
       &__link:after {
         content: '';
         position: absolute;
@@ -158,12 +157,10 @@
         transition: 0.2s ease-in;
         transform-origin: center;
       }
-
       &__link:hover:after {
         width: 100%;
         transform-origin: center;
       }
-
       &__link_active {
         position: relative;
       }

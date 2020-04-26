@@ -31,8 +31,8 @@ const ContactsInfo = () => {
               alt="phoneGreenIcon"
             />
             <h3 className="title-communication">ТЕЛЕФОНЫ</h3>
-            <p className="text-number">8 (8453) 76 25 10</p>
-            <p className="text-number">8 (800) 234 38 68</p>
+            <a href='tel:+78453762510' className="text-number">8 (8453) 76 25 10</a>
+            <a href='tel:+78002343868' className="text-number">8 (800) 234 38 68</a>
           </div>
 
           <div className="contacts-block">
@@ -52,55 +52,55 @@ const ContactsInfo = () => {
             <h3 className="title-communication arrow-com">
               ОТДЕЛ ОПТОВЫХ ПРОДАЖ
             </h3>
-            <p className="phone-dep">
+            <a href='tel:+78453762510' className="phone-dep">
               8(8453) 76-25-10 <br />
               добавочный - <b>109</b>
-            </p>
+            </a>
           </div>
 
           <div className="department-title">
             <h3 className="title-communication arrow-com">
               ОТДЕЛ РОЗНИЧНЫХ ПРОДАЖ
             </h3>
-            <p className="phone-dep">
+            <a href='tel:+78453762510' className="phone-dep">
               HoReCa <br />
               8(8453) 76-25-10 <br />
               добавочный - <b>115</b>
-            </p>
+            </a>
           </div>
 
           <div className="department-title">
             <h3 className="title-communication arrow-com">ОТДЕЛ СНАБЖЕНИЯ</h3>
-            <p className="phone-dep">
+            <a href='tel:+78453762510' className="phone-dep">
               8(8453) 76-25-10 <br />
               добавочный - <b>107</b>
-            </p>
+            </a>
           </div>
 
           <div className="department-title">
             <h3 className="title-communication arrow-com">
               ОТДЕЛ РЕГИОНАЛЬНЫХ ПРОДАЖ
             </h3>
-            <p className="phone-dep">
+            <a href='tel:+78453762510' className="phone-dep">
               8(8453) 76-25-10 <br />
               добавочный - <b>139</b>
-            </p>
+            </a>
           </div>
 
           <div className="department-title">
             <h3 className="title-communication arrow-com">ОТДЕЛ ЛОГИСТИКИ</h3>
-            <p className="phone-dep">
+            <a href='tel:+78453762510' className="phone-dep">
               8(8453) 76-25-10 <br />
               добавочный - <b>137; 106</b>
-            </p>
+            </a>
           </div>
 
           <div className="department-title">
             <h3 className="title-communication arrow-com">HR-ОТДЕЛ</h3>
-            <p className="phone-dep">
+            <a href='tel:+88453762510' className="phone-dep">
               8(8453) 76-25-10 <br />
               добавочный - <b>135</b>
-            </p>
+            </a>
           </div>
         </section>
 
@@ -123,7 +123,7 @@ const ContactsInfo = () => {
 
           <div className="fill indentation">
             <h2 className="title-fill">ТЕЛЕФОН БЕСПЛАТНОЙ ГОРЯЧЕЙ ЛИНИИ</h2>
-            <p className="number-phone">8 (800) 234 38 68</p>
+            <a href='tel:+78002343868' className="number-phone">8 (800) 234 38 68</a>
           </div>
         </section>
         </div>
