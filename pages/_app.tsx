@@ -2,6 +2,7 @@ import React from "react";
 import "../styles.scss";
 import { ProductsProvider } from "../context/ProductsContext";
 import { NewsProvider } from "../context/NewsContext";
+import Layout from "../layouts";
 
 type TProps = {
   Component: React.FC;
@@ -13,7 +14,9 @@ const MyApp: React.FC<TProps> = ({ Component, pageProps }) => {
     <div className="app">
       <NewsProvider>
         <ProductsProvider>
-          <Component {...pageProps} />
+          <Layout>
+            <Component {...pageProps} />
+          </Layout>
         </ProductsProvider>
       </NewsProvider>
     </div>

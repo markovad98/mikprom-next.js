@@ -6,18 +6,17 @@ import CompanyInfo from "../../components/CompanyInfo";
 import Partners from "../../components/Partners";
 import Feedback from "../../components/Feedback";
 import PressCenter from "../../components/PressCenter";
-import Layout from "../../layouts";
 
 const IndexPage = () => {
   return (
-    <Layout>
+    <React.Fragment>
       <Carousel />
       <Benefits />
       <CompanyInfo />
       <Partners />
       <Feedback />
       <PressCenter />
-    </Layout>
+    </React.Fragment>
   );
 };
 

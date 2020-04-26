@@ -2,6 +2,7 @@ import React from "react";
 import { Carousel as ReactCarousel } from "react-responsive-carousel";
 
 const CertificateCarousel = () => {
+
   return (
     <section className="certificate-carousel">
       <div className="container">

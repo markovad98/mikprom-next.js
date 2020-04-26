@@ -1,13 +1,20 @@
 import React from "react";
 import LocaleSwitcher from "../components/LocaleSwitcher";
 import Link from "next/link";
+import { useRouter } from 'next/router';
 import useTranslation from "../hooks/useTranslation";
 
-const Header = (props: any) => {
+const Header: React.FC = () => {
   const { locale } = useTranslation();
-  console.warn('PROPS: ', props);
+  const { pathname } = useRouter();
+  console.warn('PATH_NAME: ', pathname);
 
-  const socialIcons = [
+  type TSocialIcon = {
+    img: string;
+    link: string;
+  }
+
+  const socialIcons: Array<TSocialIcon> = [
     {
       img: require("../public/images/icons/inst.png"),
       link: "https://vk.com/club194548204"
@@ -26,28 +33,39 @@ const Header = (props: any) => {
     }
   ];
 
-  const navItems = [
-    { title: "О компании", path: "/[lang]/about", link: `/${locale}/about` },
-    { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog` },
+  type TNavItem = {
+    title: string | JSX.Element;
+    path: string;
+    link: string;
+    isActive: boolean;
+  }
+
+  const navItems: Array<TNavItem> = [
+    { title: "О компании", path: "/[lang]/about", link: `/${locale}/about`, isActive: "/[lang]/about" === pathname },
+    { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog`, isActive: "/[lang]/catalog" === pathname },
     {
       title: "Детское питание",
       path: "/[lang]/ChildrenFood",
-      link: `/${locale}/ChildrenFood`
+      link: `/${locale}/ChildrenFood`,
+      isActive: "/[lang]/ChildrenFood" === pathname
     },
     {
       title: "Партнерам",
       path: "/[lang]/partners",
-      link: `/${locale}/partners`
+      link: `/${locale}/partners`,
+      isActive:"/[lang]/partners" === pathname
     },
     {
       title: "Пресс-центр",
       path: "/[lang]/PressCenter",
-      link: `/${locale}/PressCenter`
+      link: `/${locale}/PressCenter`,
+      isActive: "/[lang]/PressCenter" === pathname
     },
     {
       title: "Контакты",
       path: "/[lang]/contacts",
-      link: `/${locale}/contacts`
+      link: `/${locale}/contacts`,
+      isActive: "/[lang]/contacts" === pathname
     },
     {
       title: (
@@ -61,7 +79,8 @@ const Header = (props: any) => {
         </div>
       ),
       path: "/[lang]/cart",
-      link: `/${locale}/cart`
+      link: `/${locale}/cart`,
+      isActive: "/[lang]/cart" === pathname
     }
   ];
 
@@ -110,7 +129,7 @@ const Header = (props: any) => {
         <section className="header-social-search">
           <article className="header-social">
             {socialIcons.map(({ img, link }, idx: number) => (
-              <a target='blank' key={idx} href={link}>
+              <a target="blank" key={idx} href={link}>
                 <img src={img} alt="" className="header-social__item" />
               </a>
             ))}
@@ -133,10 +152,10 @@ const Header = (props: any) => {
 
       <nav className="header-navigation">
         <ul className="header-navigation-list">
-          {navItems.map(({ title, path, link }, idx) => (
+          {navItems.map(({ title, path, link, isActive }, idx) => (
             <li key={idx} className="header-navigation-list__item">
               <Link href={path} as={link}>
-                <a className="header-navigation-list__link">{title}</a>
+                <a className={`header-navigation-list__link ${isActive ? 'header-navigation-list__link_active' : ''}`}>{title}</a>
               </Link>
             </li>
           ))}

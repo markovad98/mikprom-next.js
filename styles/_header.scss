@@ -144,6 +144,37 @@
 
       &__link {
         color: $white;
+        position: relative;
+      }
+
+      &__link:after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        height: 3px;
+        width: 0;
+        background-color: $green;
+        transition: 0.2s ease-in;
+        transform-origin: center;
+      }
+
+      &__link:hover:after {
+        width: 100%;
+        transform-origin: center;
+      }
+
+      &__link_active {
+        position: relative;
+      }
+      &__link_active:after {
+        content: '';
+        position: absolute;
+        top: 2rem;
+        left: 0;
+        height: 3px;
+        width: 100%;
+        background-color: $green;
       }
     }
   }

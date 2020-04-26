@@ -4,17 +4,15 @@ import CatalogBanner from "../../components/CatalogBanner";
 import TheBrand from "../../components/TheBrand";
 import ProductSections from "../../components/ProductSections";
 import ProductFeedback from "../../components/ProductFeedback";
-import Layout from "../../layouts";
-
 
 const IndexPage = () => {
     return (
-        <Layout>
+        <React.Fragment>
             <CatalogBanner/>
             <TheBrand/>
             <ProductSections/>
             <ProductFeedback/>
-        </Layout>
+        </React.Fragment>
     );
 };
 

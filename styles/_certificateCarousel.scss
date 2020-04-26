@@ -10,7 +10,7 @@
   margin: 3rem 0;
 
   .carousel-slider {
-    width: 500px !important;
+    max-width: 500px;
   }
 }
 @media(max-width: 799px){

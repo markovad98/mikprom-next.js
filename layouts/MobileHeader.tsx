@@ -1,36 +1,42 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import useTranslation from "../hooks/useTranslation";
+import {useRouter} from "next/router";
 
 const MobileHeader = () => {
   const { locale } = useTranslation();
   const [isActive, setIsActive] = useState(false);
-  const [isEng, setIsEng] = useState(false)
+  const [isEng, setIsEng] = useState(false);
   const handleToggleMenu = () => setIsActive(!isActive);
+  const { pathname } = useRouter();
 
   const navItems = [
-    { title: "О компании", path: "/[lang]/about", link: `/${locale}/about` },
-    { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog` },
+    { title: "О компании", path: "/[lang]/about", link: `/${locale}/about`, isActive: "/[lang]/about" === pathname },
+    { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog`, isActive: "/[lang]/catalog" === pathname },
     {
       title: "Детское питание",
       path: "/[lang]/ChildrenFood",
-      link: `/${locale}/ChildrenFood`
+      link: `/${locale}/ChildrenFood`,
+      isActive: "/[lang]/ChildrenFood" === pathname
     },
     {
       title: "Партнерам",
       path: "/[lang]/partners",
-      link: `/${locale}/partners`
+      link: `/${locale}/partners`,
+      isActive:"/[lang]/partners" === pathname
     },
     {
       title: "Пресс-центр",
       path: "/[lang]/PressCenter",
-      link: `/${locale}/PressCenter`
+      link: `/${locale}/PressCenter`,
+      isActive: "/[lang]/PressCenter" === pathname
     },
     {
       title: "Контакты",
       path: "/[lang]/contacts",
-      link: `/${locale}/contacts`
-    }
+      link: `/${locale}/contacts`,
+      isActive: "/[lang]/contacts" === pathname
+    },
   ];
 
   console.warn(navItems);
@@ -84,10 +90,10 @@ const MobileHeader = () => {
       
       <nav className={`mobile-header-nav container ${!isActive ? 'mobile-header-nav_hide' : ''}`}>
         <ul className="mobile-header-nav-list">
-          {navItems.map(({ title, path, link }, idx) => (
+          {navItems.map(({ title, path, link, isActive }, idx) => (
             <li key={idx} className="mobile-header-nav-list__item">
               <Link href={path} as={link}>
-                <a className="mobile-header-nav-list__link">{title}</a>
+                <a className={`mobile-header-nav-list__link ${isActive ? 'mobile-header-nav-list__link_active' : ''}`}>{title}</a>
               </Link>
             </li>
           ))}
