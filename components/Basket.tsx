@@ -19,17 +19,17 @@ const Basket = () => {
 
                         <div className="input-styles top-in el">
                             <span className="text-adress-info"> Телефон <sup className="label-star">*</sup></span>
-                            <input type="tel" name="phone" className="feedback-form__input " />
+                            <input type="tel" name="phone" className="feedback-form__input feedback-form__styles" />
                         </div>
 
                         <div className="input-styles top-in el">
                             <span className="text-adress-info rights">e-mail</span>
-                            <input type="email" className="feedback-form__input " />
+                            <input type="email" className="feedback-form__input feedback-form__styles" />
                         </div>
 
                         <div className="input-styles top-in el">
                             <span className="text-adress-info rightss">ФИО</span>
-                            <input type="text" className="feedback-form__input " />
+                            <input type="text" className="feedback-form__input feedback-form__styles" />
                         </div>
                 </div>
 

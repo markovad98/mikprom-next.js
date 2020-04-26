@@ -202,7 +202,7 @@
 
 @media (max-width: 822px) {
     .header-business{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: bold;
         line-height: 2.4rem;
         margin-bottom: 4rem;
@@ -218,13 +218,12 @@
     }
     
     .title-business{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
     
     .text-business{
-        font-size: 1rem;
-        line-height: 1.6rem;
+        @include text();
     }
 
     .title-deliveries{
@@ -237,13 +236,13 @@
     // To become partner
 
     .title-become__partner{
-        font-size: 1.5rem;
+        font-size: 1.6rem;
         font-weight: bold;
         line-height: 2.4rem;
         margin-bottom: 2rem;
     }   
     .text-become__partner{
-        font-size: 1rem;
+        @include text();
         line-height: 1.6rem;
     }
     .title-application{
@@ -258,8 +257,7 @@
     }
     
     .text-application{
-        font-size: 1rem;
-        line-height: 1.6rem;
+        @include text();
         width: 100%;
     }
     
@@ -337,7 +335,7 @@
         padding-right: 1rem;
     }
     .header-business{
-        font-size: 1rem;
+        font-size: 1.6rem;
         line-height: 1.4rem;
         margin-bottom: 2rem;
     }
@@ -359,13 +357,12 @@
     }
     
     .title-business{
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 2rem;
     }
     
     .text-business{
-        font-size: 0.8rem;
-        line-height: 1.4rem;
+        @include text();
     }
 
     // deliveries
@@ -373,25 +370,18 @@
         margin-top: 7rem;
     }
     .title-deliveries{
-        font-size: 1rem;
-        line-height: 1.4rem;
+        font-size: 1.6rem;
+        line-height: 1.3rem;
         margin-bottom: 2rem;
     }
     .title-become__partner {
-        font-size: 1rem;
+        font-size: 1.3rem;
         line-height: 1.4rem;
         margin-bottom: 2rem;
     }
     .text-become__partner {
-        font-size: 0.8rem;
-        line-height: 1.4rem;
+        @include text();
     }
-
-
-
-
-
-
 
     .btn-application{
         margin-top: 1.5rem;
@@ -469,6 +459,48 @@
 }
 
 @media(max-width: 320px) {
+
+    .header-business{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        color: #4C4D4F;
+        margin-bottom: 4.6rem;
+    }
+    .title-business{
+        font-size: 1.3rem;
+        line-height: 2rem;
+        color: #4C4D4F;
+        margin-bottom: 1rem;
+    }
+    
+    .text-business{
+        @include text();
+        color: #4C4D4F;
+    }
+    .title-deliveries{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 6.25rem;
+        padding-bottom: 3rem;
+    }
+    .title-become__partner{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-bottom: 2.6rem;
+    }
+    .text-become__partner{
+        @include text();
+    }
+    .title-application{
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2rem;
+        margin-bottom: 0.9rem;
+    }
+    .text-application{
+        @include text();
+        width: 100%;
+    }
     .btn-application{
         margin-top: 1.5rem;
         border: none;

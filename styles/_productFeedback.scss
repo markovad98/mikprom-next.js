@@ -62,25 +62,28 @@ font-family: Montserrat;
 }
 
 
-@media (max-width: 553px){
+@media (max-width: 560px){
     .feedback{
         padding: 0 1rem;
     }
     .input-indent{
-        width: 20rem;
+        width: 45rem;
     }
     .input-indents{
         min-width: 20rem;
-        
     }
     .mess {
-       
         margin-bottom: 0.7rem;
         font-size: 1.2rem;
         line-height: 0.8rem;
+        margin-left: 0;
     }
-    .input-inden{
-        min-width: 20rem;
+    .ml-name{
+        margin-left: 0;
+    }
+    .input-indent{
+        width: 110%; 
+        margin-left: 0;
     }
 }
 @media (max-width: 553px){
@@ -100,23 +103,15 @@ font-family: Montserrat;
         line-height: 0.8rem;
     }
     .input-inden{
-        min-width: 15rem;
-    }
-    .feedback-product{
-        margin-left: 1rem;
-        width: 100%;
+        width: 99%;
     }
     .ml-name{
         margin-left: 1rem;
     }
 }
-@media (max-width: 374px){
-    .feedback-product{
-        width: 145%;
+@media (max-width: 414px){
+    .input-indent{
+        width: 115%;
     }
 }
-@media (max-width: 320px){
-    .feedback-product{
-        width: 159%;
-    }
-}
+
