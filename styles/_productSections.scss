@@ -148,6 +148,85 @@
   font-size: 15px;
 }
 
+
+// MODAL
+
+.modal{ 
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.modal-dialog{
+  max-width: 780px;
+  width: 95%;
+  background: #ffffff;
+  border-radius: 5px;
+  margin: auto;
+  padding: 30px 40px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.title-exit{
+
+}
+.close {
+  position: absolute;
+  right: 32px;
+  top: 32px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+}
+.close:hover {
+  
+}
+.close:before, .close:after {
+  position: absolute;
+  right: 35rem;
+  top: 2rem;
+  content: ' ';
+  height: 33px;
+  width: 2px;
+  background-color: #B0CD8B;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+.title-modal{
+  @include subtitle();
+  text-align: center;
+}
+
+
+.imgs{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-product{
+
+}
+
+.info-products{
+
+}
+
+.text-products{
+  @include text();
+}
+
+
+
 @media (max-width: 1680px){
   .btn-basket {
     font-family: Montserrat;

@@ -94,20 +94,16 @@
         height: 4.4rem;
         margin-bottom: 1.8rem;
     }
-    
     .mb{
         margin-bottom: 3rem;
     }
-    
     .location {
         width: 4.5rem;
     }
-    
     .title-card{
         font-size: 1.3rem;
         line-height: 2rem;
     }
-    
     .text-card{
         @include text();
     }
@@ -157,20 +153,16 @@
         height: 4.4rem;
         margin-bottom: 0;
     }
-    
     .mb{
         margin-bottom: 0;
     }
-    
     .location {
         width: 3rem;
     }
-    
     .title-card{
         font-size: 1.3rem;
         line-height: 2rem;
     }
-    
     .text-card{
         @include text();
     }
