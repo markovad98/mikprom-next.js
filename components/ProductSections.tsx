@@ -164,7 +164,7 @@ const ProductSections = () => {
               <img src={require("../public/images/chickenPhotos/chickenBasket.png")} alt="" className="img-product"/>
             </div>
             <div className="info-products">
-              <p className="text-products"><b>Термическое состояние: охлажденное и замороженное</b></p>
+              <p className="text-products"><b>Термическое состояние:</b> охлажденное и замороженное</p>
               <p className="text-products"><b> Состав:</b> цыпленок бройлер</p>
               <p className="text-products"><b>Пищевая ценность в 100 г продукта:</b></p>
               <ul className="text-products">
