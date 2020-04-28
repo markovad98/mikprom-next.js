@@ -6,34 +6,34 @@
 @import "styles/header";
 @import "styles/variables";
 @import "styles/benefits";
-@import "styles/companyInfo";
+@import "styles/company-info";
 @import "styles/partners";
 @import "styles/feedback";
-@import "styles/pressCenter";
-@import "styles/aboutCompany";
-@import "styles/catalogBanner";
-@import "styles/theBrand";
-@import "styles/productSections";
-@import "styles/productFeedback";
-@import "styles/childrenFood";
-@import "styles/partnersQuality";
-@import "styles/PartnersThreeBlocks";
-@import "styles/PressCenterCards";
-@import "styles/ContactsInfo";
+@import "styles/press-center";
+@import "styles/about-company";
+@import "styles/catalog-banner";
+@import "styles/the-brand";
+@import "styles/product-sections";
+@import "styles/product-feedback";
+@import "styles/children-food";
+@import "styles/partners-quality";
+@import "styles/partners-three-blocks";
+@import "styles/press-center-cards";
+@import "styles/contacts-info";
 @import "styles/footer";
-@import "styles/certificateCarousel";
-@import "styles/mobileHeader";
+@import "styles/certificate-carousel";
+@import "styles/mobile-header";
 @import "styles/basket";
 
 @font-face {
   font-family: Montserrat;
-  src: url("./public/fonts/Montserrat-Black.ttf");
-  src: url("./public/fonts/Montserrat-BlackItalic.ttf");
-  src: url("./public/fonts/Montserrat-Bold.ttf");
-  src: url("./public/fonts/Montserrat-BoldItalic.ttf");
-  src: url("./public/fonts/Montserrat-Light.ttf");
-  src: url("./public/fonts/Montserrat-Medium.ttf");
-  src: url("./public/fonts/Montserrat-Regular.ttf");
+  src: url("./public/fonts/montserrat-black.ttf");
+  src: url("./public/fonts/montserrat-blackItalic.ttf");
+  src: url("./public/fonts/montserrat-bold.ttf");
+  src: url("./public/fonts/montserrat-boldItalic.ttf");
+  src: url("./public/fonts/montserrat-light.ttf");
+  src: url("./public/fonts/montserrat-medium.ttf");
+  src: url("./public/fonts/montserrat-regular.ttf");
 }
 
 * {
