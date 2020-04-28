@@ -228,5 +228,9 @@
 @media (max-width: 1170px) {
   .header {
     display: none;
+
+    &-navigation {
+      display: none;
+    }
   }
 }
