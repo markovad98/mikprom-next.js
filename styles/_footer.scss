@@ -17,9 +17,6 @@
 .footer-section {
     width: 27%;
 }
-.social{
-    margin-top: -13rem;
-}
 .logo-footer{
     width: 249px;
     height: 32px;
@@ -48,6 +45,18 @@
     width: 25px;
     height: 15px;
     margin-right: 1.2rem;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+
+    &__item {
+        padding-bottom: 0.8rem;
+        font-size: 1.2rem;
+        color: $grey;
+        display: block;
+    }
 }
 
 .adress{
