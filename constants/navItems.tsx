@@ -8,8 +8,8 @@ type TNavItem = {
 }
 
 export const navItems = (locale: string, pathname: string, cartCount: number): Array<TNavItem> => ([
-    { title: "О компании", path: "/[lang]/about", link: `/${locale}/about`, isActive: "/[lang]/about" === pathname },
-    { title: "Каталог", path: "/[lang]/catalog", link: `/${locale}/catalog`, isActive: "/[lang]/catalog" === pathname },
+    { title: "О компании", path: "/[lang]/About", link: `/${locale}/About`, isActive: "/[lang]/About" === pathname },
+    { title: "Каталог", path: "/[lang]/Catalog", link: `/${locale}/Catalog`, isActive: "/[lang]/Catalog" === pathname },
     {
         title: "Детское питание",
         path: "/[lang]/ChildrenFood",
@@ -18,9 +18,9 @@ export const navItems = (locale: string, pathname: string, cartCount: number): A
     },
     {
         title: "Партнерам",
-        path: "/[lang]/partners",
-        link: `/${locale}/partners`,
-        isActive:"/[lang]/partners" === pathname
+        path: "/[lang]/Partners",
+        link: `/${locale}/Partners`,
+        isActive:"/[lang]/Partners" === pathname
     },
     {
         title: "Пресс-центр",
@@ -30,9 +30,9 @@ export const navItems = (locale: string, pathname: string, cartCount: number): A
     },
     {
         title: "Контакты",
-        path: "/[lang]/contacts",
-        link: `/${locale}/contacts`,
-        isActive: "/[lang]/contacts" === pathname
+        path: "/[lang]/Contacts",
+        link: `/${locale}/Contacts`,
+        isActive: "/[lang]/Contacts" === pathname
     },
     {
         title: (
@@ -45,8 +45,8 @@ export const navItems = (locale: string, pathname: string, cartCount: number): A
                 <div className="header-cart__circle">{cartCount}</div>
             </div>
         ),
-        path: "/[lang]/cart",
-        link: `/${locale}/cart`,
-        isActive: "/[lang]/cart" === pathname
+        path: "/[lang]/Cart",
+        link: `/${locale}/Cart`,
+        isActive: "/[lang]/Cart" === pathname
     }
 ]);
