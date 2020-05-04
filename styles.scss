@@ -25,17 +25,6 @@
 @import "styles/mobile-header";
 @import "styles/basket";
 
-@font-face {
-  font-family: Montserrat;
-  src: url("public/fonts/montserrat-black.ttf");
-  src: url("public/fonts/montserrat-blackitalic.ttf");
-  src: url("public/fonts/montserrat-bold.ttf");
-  src: url("public/fonts/montserrat-bolditalic.ttf");
-  src: url("public/fonts/montserrat-light.ttf");
-  src: url("public/fonts/montserrat-medium.ttf");
-  src: url("public/fonts/montserrat-regular.ttf");
-}
-
 * {
   box-sizing: border-box;
   outline: none;
@@ -54,7 +43,7 @@ body {
   width: 100%;
   height: 100%;
   color: #4c4d4f;
-  font-family: Montserrat, "sans-serif";
+  font-family: 'Montserrat', sans-serif;
   background-color: $white;
   font-weight: lighter;
 }
