@@ -104,9 +104,30 @@
     }
 }
 
+@media (max-width: 580px) {
+    .section-nav {
+        &__item {
+            font-size: 1rem;
+            position: relative;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .section-nav {
+        &__item {
+            font-size: 0.8rem;
+            position: relative;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+    }
+}
+
 
 .social-icons{
-    margin-top: 3.3rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -119,7 +140,8 @@
 }
 
 .copyright{
-margin-top: 1.6rem;
+    margin: 1.6rem 0;
+    line-height: 135%;
 }
 
 @media (max-width: 1236px){
@@ -139,7 +161,6 @@ margin-top: 1.6rem;
     }
     .social{
         margin-left: 2rem;
-        margin-top: -5rem;
     }
     .footer-section {
         width: 100%;

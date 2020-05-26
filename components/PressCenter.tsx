@@ -31,7 +31,7 @@ const PressCenter = () => {
         previousLabel={
           currentPage !== 0 && (
             <img
-              style={{ transform: "rotate(180deg)", width: "24px" }}
+              style={{ transform: "rotate(180deg)", width: "14px" }}
               src={require("../public/images/icons/paginateArrow.png")}
               alt=""
             />
@@ -40,7 +40,7 @@ const PressCenter = () => {
         nextLabel={
           currentPage + 3 !== news.length && (
             <img
-              style={{ width: "24px" }}
+              style={{ width: "14px" }}
               src={require("../public/images/icons/paginateArrow.png")}
               alt=""
             />

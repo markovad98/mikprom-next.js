@@ -8,13 +8,9 @@
 }
 
 .product-sections {
-  padding-top: 3rem;
+  padding: 3rem 0;
   display: flex;
   justify-content: center;
-}
-
-.section-nav {
-  margin-bottom: 5rem;
 }
 
 .nav {
@@ -153,6 +149,7 @@
 // MODAL
 
 .modal{
+  z-index: 999;
   display: none;
   position: fixed;
   left: 0;
