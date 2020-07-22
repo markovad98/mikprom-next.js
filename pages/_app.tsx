@@ -1,10 +1,10 @@
 import React from "react";
-import "../styles.scss";
 import { ProductsProvider } from "../context/ProductsContext";
 import { NewsProvider } from "../context/NewsContext";
 import Layout from "../layouts";
 import { CartProvider } from "../context/CartContext";
 import Head from "next/head";
+import "../styles.scss"
 
 type TProps = {
   Component: React.FC;

@@ -1,7 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import { getInitialLocale } from "../translations/getInitialLocale";
-import "../styles.scss";
+import "../styles.scss"
+
 
 const Index = () => {
   React.useEffect(() => {
