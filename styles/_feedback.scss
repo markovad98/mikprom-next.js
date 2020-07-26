@@ -21,15 +21,16 @@
 
   &-form {
     display: flex;
-    justify-content: flex-start;
-    
+    flex-direction: column;
+
 
     &-left {
+      max-height: 189px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       align-items: center;
-      padding-right: 6rem;
+      padding-right: 40px;
     }
 
     &-right {
@@ -50,16 +51,15 @@
       border-radius: 12.9042px;
       border: none;
       padding: 1rem;
-      width: 30rem;
+      width: 340px;
     }
 
     &__textarea {
       background: #fff;
       box-shadow: 0px 2.58083px 12.9042px rgba(0, 0, 0, 0.39);
       border-radius: 12.9042px;
-      width: 30rem;
+      width: 370px;
       padding: 1rem;
-      margin-bottom: 6rem;
     }
 
     &__select {
@@ -75,6 +75,8 @@
     }
 
     &-button {
+      width: 220px;
+      text-align: center;
       @include green-button();
     }
     &-button:hover {
@@ -166,4 +168,12 @@
     margin-right: 0;
     margin-left: 3rem;
   }
+}
+.new-feedback-hint {
+  font-size: 12px;
+  color: #4C4D4F;
+  padding: 24px;
+  padding-left: 0;
+  max-width: 800px;
+  line-height: 1.4;
 }

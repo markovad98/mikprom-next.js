@@ -15,14 +15,17 @@
 }
 
 .benefits {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
   flex-wrap: wrap;
   width: 100%;
   justify-content: space-between;
   padding: 3rem 0;
+  align-items: baseline;
 
   &-btn {
     @include green-button();
+    margin-bottom: 6rem;
   }
 
   &-item {
@@ -39,6 +42,22 @@
       line-height: 1.5;
       white-space: pre-line;
       padding-bottom: 1rem;
+    }
+  }
+}
+
+@media(max-width: 850px){
+  .benefits {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
+
+    &-item {
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+
+      &__img {
+        width: 100px;
+      }
     }
   }
 }

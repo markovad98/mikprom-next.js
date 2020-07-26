@@ -14,7 +14,7 @@ const PressCenterCards = () => {
       <h2 className="title-center">ПРЕСС-ЦЕНТР</h2>
       <section className="press-center-cards">
         {news
-          .slice(currentPage, currentPage + 3)
+          ?.slice(currentPage, currentPage + 3)
           .map(({ img, time, text }: any, idx: any) => (
             <article key={idx} className="card-center">
               <img

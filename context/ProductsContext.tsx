@@ -1,4 +1,6 @@
-import React, { useState, createContext } from 'react';
+import React, {useState, createContext, useEffect} from 'react';
+import unfetch from "unfetch";
+import {BASE_URL} from "../constants/BASE_URL";
 
 export const ProductsContext = createContext({} as any);
 
@@ -14,62 +16,19 @@ export type TProduct = {
 }
 
 export const ProductsProvider: React.FC<Props> = ({ children }) => {
-    const [products, setProducts] = useState<Array<TProduct>>([
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)1",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)2",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)3",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)4",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)5",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)6",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)7",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)8",
-            price: 500,
-            count: 1
-        },
-        {
-            img: require("../public/images/chickenPhotos/1.svg"),
-            title: "ФИЛЕ ОКОРОЧКА ЦЫПЛЕНКА БРОЙЛЕРА (С КОЖЕЙ)9",
-            price: 500,
-            count: 1
-        },
+    const [products, setProducts] = useState<any>([
     ]);
+
+    useEffect(() => {
+        unfetch(`${BASE_URL}/products`).then(data => data.json().then(data => {
+            const products = data.map((prod: any) => {
+
+                return {...prod, img: `${BASE_URL}${prod.img.url}`}
+            })
+
+            setProducts(products)
+        }))
+    }, [])
 
     return (
         <ProductsContext.Provider value={[products, setProducts]}>

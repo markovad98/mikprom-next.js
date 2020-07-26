@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { ProductsProvider } from "../context/ProductsContext";
 import { NewsProvider } from "../context/NewsContext";
 import Layout from "../layouts";

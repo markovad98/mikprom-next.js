@@ -1,11 +1,11 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-import PressCenterCards from "../../components/PressCenterCards"
+import NewPressCenter from "../../newComponents/NewPressCenter";
 
 const IndexPage = () => {
     return (
         <React.Fragment>
-            <PressCenterCards/>
+            <NewPressCenter initialPageSize={12} />
         </React.Fragment>
     );
 };

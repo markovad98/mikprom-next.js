@@ -1,14 +1,18 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-import AboutCompany from "../../components/AboutCompany";
 import CertificateCarousel from "../../components/CertificateCarousel";
+import NewAboutCompany from "../../newComponents/AboutCompany";
+import Partners from "../../components/Partners";
+import AboutCompanyBanner from "../../newComponents/AboutCompanyBanner";
 
 const IndexPage = () => {
 
     return (
         <React.Fragment>
-            <AboutCompany />
+            <AboutCompanyBanner />
+            <NewAboutCompany withVideo={false} />
             <CertificateCarousel />
+            <Partners />
         </React.Fragment>
     );
 };

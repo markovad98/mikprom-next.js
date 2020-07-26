@@ -35,18 +35,9 @@ export const navItems = (locale: string, pathname: string, cartCount: number): A
         isActive: "/[lang]/Contacts" === pathname
     },
     {
-        title: (
-            <div className="header-cart">
-                <img
-                    className="header-cart__img"
-                    src={require("../public/images/icons/cart.png")}
-                    alt="cart"
-                />
-                <div className="header-cart__circle">{cartCount}</div>
-            </div>
-        ),
-        path: "/[lang]/Cart",
-        link: `/${locale}/Cart`,
-        isActive: "/[lang]/Cart" === pathname
-    }
+        title: "Вакансии",
+        path: "/[lang]/Vacancy",
+        link: `/${locale}/Vacancy`,
+        isActive: "/[lang]/Vacancy" === pathname
+    },
 ]);

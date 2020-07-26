@@ -1,0 +1,43 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.vacancy {
+  padding: 80px 0 200px 0;
+  &-title {
+    @include section-title();
+    margin-bottom: 30px;
+  }
+
+  &-link-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #2F629D;
+    margin-bottom: 12px;
+    font-weight: bold;
+  }
+
+  &-subtitle {
+    display: flex;
+    align-items: center;
+
+    color: #4C4D4F;
+    padding: 30px 0;
+  }
+
+  &-subtitle2 {
+    color: #4C4D4F;
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  &-icon {
+    width: 38px;
+    margin-right: 12px;
+  }
+}

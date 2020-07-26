@@ -1,21 +1,22 @@
 import React from "react";
 import withLocale from "../../hocs/withLocale";
-import Carousel from "../../components/Carousel";
 import Benefits from "../../components/Benefits";
-import CompanyInfo from "../../components/CompanyInfo";
-import Partners from "../../components/Partners";
 import Feedback from "../../components/Feedback";
-import PressCenter from "../../components/PressCenter";
+import MainBanner from "../../newComponents/MainBanner";
+import OurProducts from "../../newComponents/OurProducts";
+import NewAboutCompany from "../../newComponents/AboutCompany";
+import NewPressCenter from "../../newComponents/NewPressCenter";
 
 const IndexPage = () => {
   return (
     <React.Fragment>
-      <Carousel />
+      <MainBanner />
       <Benefits />
-      <CompanyInfo />
-      <Partners />
+      <OurProducts />
+      <NewAboutCompany withVideo={true} />
+      <NewPressCenter />
       <Feedback />
-      <PressCenter />
+
     </React.Fragment>
   );
 };

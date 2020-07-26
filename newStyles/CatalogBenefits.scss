@@ -1,0 +1,34 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.catalog-benefits {
+  padding: 130px 0 100px 0;
+
+  &-title {
+    @include section-title();
+    max-width: 740px;
+    margin-bottom: 30px;
+  }
+
+  &-container {
+    margin-bottom: 30px;
+    line-height: 1.4;
+  }
+
+  &-text-title {
+    font-weight: bold;
+  }
+
+  &-text {
+
+  }
+
+  &-button {
+    @include green-button();
+  }
+}
+
+.c-b-c {
+  display: flex;
+  justify-content: center;
+}

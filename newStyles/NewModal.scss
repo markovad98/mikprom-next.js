@@ -1,0 +1,36 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.new-modal {
+  &-title {
+    @include section-title
+    margin-bottom: 20px;
+  }
+
+  &-container {
+    display: flex;
+  }
+
+  &-img {
+
+    img {
+      max-width: 500px;
+      object-fit: contain;
+    }
+  }
+
+  &-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-info-item {
+    margin-bottom: 20px;
+    white-space: pre-line;
+
+    span {
+      margin-right: 6px;
+      font-weight: bold;
+    }
+  }
+}

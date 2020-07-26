@@ -1,23 +1,25 @@
 @import "variables";
 
 @mixin green-button {
-  padding: 1rem 2rem;
+  padding: 10px 14px;
   background-color: $light-green;
   color: $grey;
   border: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   max-width: 332px;
   text-transform: uppercase;
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
+  box-shadow: 0px 1.67618px 1.67618px rgba(0, 0, 0, 0.25);
 }
 
 @mixin section-title {
-  font-size: 2rem;
+  font-size: 36px;
   font-weight: bold;
-  line-height: 2.4rem;
+  font-family: Montserrat;
+  text-transform: uppercase;
 }
 
 @mixin subtitle {

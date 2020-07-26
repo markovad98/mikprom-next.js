@@ -11,7 +11,8 @@
 
 .choice__brand {
     @include section-title();
-    text-transform: uppercase;
+    margin-right: 40px;
+    white-space: nowrap;
 }
 
 .logo-chick {

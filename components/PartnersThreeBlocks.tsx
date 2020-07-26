@@ -32,6 +32,11 @@ const PartnersThreeBlocks = () => {
                     </div>
                     </div>
                 </div> {/* /.cards-business */}
+                <div style={{
+                    marginTop: "54px"
+                }} className="c-b-c">
+                <button className="partners-get-price">Получить Прайс</button>
+                </div>
             </section>
 
             <section className="deliveries">

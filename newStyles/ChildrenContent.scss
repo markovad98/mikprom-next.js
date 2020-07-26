@@ -1,0 +1,14 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.children-content {
+  &-container {
+    margin-top: 68px;
+    line-height: 1.5;
+  }
+
+  &-text {
+    display: block;
+    margin-bottom: 30px;
+  }
+}

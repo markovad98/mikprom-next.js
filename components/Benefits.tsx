@@ -1,26 +1,32 @@
 import React from "react";
 
 const Benefits = () => {
+
   const benefitsList = [
     {
-      title: "Куриная разделка \n оптом и в розницу",
+      title: "Экологически \n чистый продукт",
+      img: require("../public/images/eco-energy 2.png"),
+      iconSize: { width: "89px", height: "" }
+    },
+    {
+      title: "Высокое \n качество ГОСТ",
       img: require("../public/images/greenIcons/medalIcon.png"),
-      iconSize: { width: "3.8rem", height: "" }
+      iconSize: { width: "54px", height: "" }
     },
     {
-      title: "Высокое качество \n ГОСТ",
-      img: require("../public/images/greenIcons/cartBigGreenIcon.png"),
-      iconSize: { width: "5.5rem", height: "" }
+      title: " Современное \n производство",
+      img: require("../public/images/DOMIK.png"),
+      iconSize: { width: "56px", height: "" }
     },
     {
-      title: "Свое \n производство",
-      img: require("../public/images/greenIcons/wheatGreenIcon.png"),
-      iconSize: { width: "2.4rem", height: "" }
+      title: "Доступные \n цены",
+      img: require("../public/images/ruble.png"),
+      iconSize: { width: "56px", height: "" }
     },
     {
-      title: "Отгрузка \n от одного дня",
+      title: "Отгрузка от \n одного дня",
       img: require("../public/images/greenIcons/truckBigGreenIcon.png"),
-      iconSize: { width: "7.8rem", height: "" }
+      iconSize: { width: "87px", height: "" }
     }
   ];
 
@@ -31,7 +37,7 @@ const Benefits = () => {
         {benefitsList.map(({ title, img, iconSize }, idx) => (
           <article key={idx} className="benefits-item">
             <div className="benefits-item__img">
-              <img style={iconSize} src={img} alt="" className="img-benefits"/>
+              <img style={iconSize} src={img} alt="" className="img-benefits" />
             </div>
             <div className="benefits-item__title">{title}</div>
           </article>

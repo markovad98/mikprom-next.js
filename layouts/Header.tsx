@@ -57,9 +57,9 @@ const Header: React.FC = () => {
 
           <section className="header-social-search">
             <article className="header-social">
-              {socialIcons.map(({ img, link }, idx: number) => (
+              {socialIcons.map(({ img, link, style }, idx: number) => (
                 <a target="blank" key={idx} href={link}>
-                  <img src={img} alt="" className="header-social__item" />
+                  <img style={style} src={img} alt="" className="header-social__item" />
                 </a>
               ))}
             </article>

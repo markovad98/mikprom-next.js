@@ -1,0 +1,36 @@
+.main-banner {
+  position: relative;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    left: 50%;
+    position: absolute;
+    font-size: 30px;
+    top: 50%;
+    transform: translate(-50%);
+    line-height: 1.2;
+    color: rgba(255, 255, 255, 0.89);
+    text-shadow: 0px 0px 25px rgba(0, 0, 0, 0.6);
+    font-weight: 300;
+  }
+}
+
+@media(max-width: 850px) {
+  .main-banner {
+    &__title {
+      top: 30%;
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .main-banner {
+    &__title {
+      top: 10%;
+      font-size: 20px;
+    }
+  }
+}

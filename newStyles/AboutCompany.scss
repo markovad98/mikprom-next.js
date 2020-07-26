@@ -1,0 +1,98 @@
+@import "styles/mixins";
+@import "styles/variables";
+
+.new-about-company-bg {
+  background: #F8F8F8;
+  width: 100%;
+}
+.new-about-company {
+  padding: 49px 0 111px 0;
+
+  &__title {
+    @include section-title()
+  }
+
+  &-container {
+    margin: 32px 0 64px 0;
+    display: flex;
+  }
+
+  &-topics-container {
+    margin-right: 140px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-topic {
+    display: flex;
+    margin-bottom: 32px;
+  }
+
+  &-topic__img {
+    margin-right: 36px;
+    max-width: 62px;
+    object-fit: contain;
+  }
+
+  &-topic__title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #4C4D4F;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  &-text-container {
+
+  }
+
+  &-text {
+    line-height: 1.8;
+  }
+
+  &-text:first-child {
+    margin-bottom: 46px;
+  }
+
+  &-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-button {
+    @include green-button();
+    margin-bottom: 118px;
+  }
+
+  &-slider {
+
+  }
+}
+
+.thumb-wrap {
+  position: relative;
+  padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
+  height: 0;
+  overflow: hidden;
+}
+.thumb-wrap iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-width: 0;
+  outline-width: 0;
+}
+
+@media (max-width: 850px) {
+  .new-about-company {
+    &-container {
+      flex-direction: column;
+    }
+
+    &-topic__title {
+      font-size: 14px;
+    }
+  }
+}

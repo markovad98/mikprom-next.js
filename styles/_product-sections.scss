@@ -165,14 +165,15 @@
 
 
 .modal-dialog{
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
   max-width: 780px;
   width: 95%;
   background: #ffffff;
   border-radius: 5px;
-  margin: auto;
   padding: 30px 40px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
 
 .title-exit{

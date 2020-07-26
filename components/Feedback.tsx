@@ -1,4 +1,5 @@
 import React from "react";
+import unfetch from "unfetch";
 
 const Feedback = () => {
   return (
@@ -8,35 +9,49 @@ const Feedback = () => {
         Заполните форму обратной связи и получите ответы на свои вопросы
       </p>
       <span className="feedback-hint">* - поля, обязательные к заполнению</span>
-      <form action="" className="feedback-form">
-        <div className="feedback-form-left">
+      <form action="/api/contact" method={"POST"} onSubmit={event => {
+          unfetch("api/contact", {
+              method: "post",
+              body: JSON.stringify({
+                  name: "Alex1123"
+              })
+          })
+      }} className="feedback-form">
+        <div style={{
+            display: "flex",
+        }}>
+          <div className="feedback-form-left">
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form"> Имя <sup className="label-star">*</sup></span>
-            <input type="text" className="feedback-form__input" />
+            <input type="text" name="name" className="feedback-form__input" />
           </label>
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form">e-mail<sup className="label-star">*</sup></span>
-            <input type="text" className="feedback-form__input" />
+            <input type="text"name="mail" className="feedback-form__input" />
           </label>
-          <button className="feedback-form-button">Отправить</button>
         </div>
         <div className="feedback-form-right">
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form mess">Cообщение<sup className="label-star">*</sup></span>
             <textarea
-              name=""
+              name="text"
               id=""
               cols={30}
               rows={10}
               className="feedback-form__textarea"
             ></textarea>
           </label>
-          <select name="" id="" className="feedback-form__select">
-              <option disabled selected hidden>Выберите тему сообщения</option>
-              <option>Выберите тему сообщения</option>
-              <option>Выберите тему сообщения</option>
-          </select>
         </div>
+        </div>
+          <div className="new-feedback-hint">
+              Нажимая на кнопку “отправить” вы даётё согласие на обработку ваших персональных данных. Мы гарантируем использование ваших данных только для осуществления обратной связи.
+          </div>
+          <div style={{
+              display: "flex",
+              width: "100%"
+          }}>
+              <button type="submit" className="feedback-form-button">Отправить</button>
+          </div>
       </form>
     </section>
   );

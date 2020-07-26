@@ -24,6 +24,14 @@
 @import "styles/certificate-carousel";
 @import "styles/mobile-header";
 @import "styles/basket";
+@import "newStyles/MainBanner";
+@import "newStyles/OutProducts";
+@import "newStyles/AboutCompany";
+@import "newStyles/NewPressCenter";
+@import "newStyles/CatalogBenefits";
+@import "newStyles/ChildrenContent";
+@import "newStyles/Vacancy";
+@import "newStyles/NewModal";
 
 * {
   box-sizing: border-box;
@@ -31,6 +39,10 @@
   padding: 0;
   margin: 0;
   border: 0;
+}
+
+.partners-get-price {
+  @include green-button();
 }
 
 html {
@@ -51,9 +63,7 @@ body {
 a {
   text-decoration: none;
 }
-.bg-grey {
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
+
 .wrapper-gray {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
@@ -116,4 +126,10 @@ a {
 
 .label-star {
   color: red;
+}
+
+.banner-img {
+  height: 437px;
+  width: 100%;
+  object-fit: cover;
 }
