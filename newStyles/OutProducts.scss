@@ -21,10 +21,7 @@
   &-container {
     display: grid;
     grid-gap: 40px;
-    justify-content: center;
     grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
-    justify-items: center;
-    align-items: center;
     margin-top: 12px;
   }
 

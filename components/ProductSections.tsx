@@ -27,19 +27,23 @@ const ProductSections = () => {
   const [tabItems, setTabItems] = useState([
     {
       title: "Куриная разделка",
-      isActive: true
+      isActive: true,
+      value: "chicken",
     },
     {
       title: "Субпродукт",
-      isActive: false
+      isActive: false,
+      value: "subproduct",
     },
     {
       title: "Фарш",
-      isActive: false
+      isActive: false,
+      value: "meat",
     },
     {
       title: "Все категории",
-      isActive: false
+      isActive: false,
+      value: "all",
     }
   ]);
 
@@ -72,7 +76,7 @@ const ProductSections = () => {
 
         <div className="our-products-container">
           {
-            products.map(({ img, title, id }, idx) => (
+            products.filter(({ category }) => category === tabItems?.find(tab => tab?.isActive)?.value).map(({ img, title, id }, idx) => (
                 <div onClick={handleShowModal(id)} key={idx} className="article our-products__item"><img src={img} alt="" className="our-products__img"/>
                   <div className="our-products__product-name">{title}</div>
                   <button className="our-products__button">Получить прайс</button>
