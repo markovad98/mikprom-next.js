@@ -1,5 +1,3 @@
-import React from "react";
-
 type TNavItem = {
     title: string | JSX.Element;
     path: string;
@@ -7,7 +5,7 @@ type TNavItem = {
     isActive: boolean;
 }
 
-export const navItems = (locale: string, pathname: string, cartCount: number): Array<TNavItem> => ([
+export const navItems = (locale: string, pathname: string): Array<TNavItem> => ([
     { title: "О компании", path: "/[lang]/About", link: `/${locale}/About`, isActive: "/[lang]/About" === pathname },
     { title: "Каталог", path: "/[lang]/Catalog", link: `/${locale}/Catalog`, isActive: "/[lang]/Catalog" === pathname },
     {

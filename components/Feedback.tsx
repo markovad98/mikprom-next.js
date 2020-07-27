@@ -9,7 +9,7 @@ const Feedback = () => {
         Заполните форму обратной связи и получите ответы на свои вопросы
       </p>
       <span className="feedback-hint">* - поля, обязательные к заполнению</span>
-      <form action="/api/contact" method={"POST"} onSubmit={event => {
+      <form action="/api/contact" method={"POST"} onSubmit={() => {
           unfetch("api/contact", {
               method: "post",
               body: JSON.stringify({

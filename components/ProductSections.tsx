@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { ProductsContext, TProduct } from "../context/ProductsContext";
+import { ProductsContext } from "../context/ProductsContext";
 import ProductModal from "./ProductModal";
 
 const ProductSections = () => {
@@ -76,7 +76,7 @@ const ProductSections = () => {
 
         <div className="our-products-container">
           {
-            products.filter(({ category }) => category === tabItems?.find(tab => tab?.isActive)?.value).map(({ img, title, id }, idx) => (
+            products.filter(({ category }: { category: any}) => category === tabItems?.find(tab => tab?.isActive)?.value).map(({ img, title, id }: any, idx: number) => (
                 <div onClick={handleShowModal(id)} key={idx} className="article our-products__item"><img src={img} alt="" className="our-products__img"/>
                   <div className="our-products__product-name">{title}</div>
                   <button className="our-products__button">Получить прайс</button>

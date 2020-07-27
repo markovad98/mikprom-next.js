@@ -1,16 +1,14 @@
-import React, { useContext } from "react";
+import React from "react";
 import LocaleSwitcher from "../components/LocaleSwitcher";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import useTranslation from "../hooks/useTranslation";
 import { navItems } from "../constants/navItems";
-import { CartContext } from "../context/CartContext";
 import {socialIcons} from "../constants/socialIcons";
 
 const Header: React.FC = () => {
   const { locale } = useTranslation();
   const { pathname } = useRouter();
-  const [products] = useContext(CartContext);
 
   return (
     <React.Fragment>
@@ -84,10 +82,6 @@ const Header: React.FC = () => {
           {navItems(
             locale,
             pathname,
-            products.reduce(
-              (acc: number, { count }: { count: number }) => acc + count,
-              0
-            )
           ).map(({ title, path, link, isActive }, idx) => (
             <li key={idx} className="header-navigation-list__item">
               <Link href={path} as={link}>

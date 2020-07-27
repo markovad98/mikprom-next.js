@@ -5,7 +5,7 @@ import {NewsContext} from "../../../context/NewsContext";
 import Link from "next/link";
 import useTranslation from "../../../hooks/useTranslation";
 
-const NewsItem = ({ title, date, text, bigImg }) => {
+const NewsItem = ({ title, date, text, bigImg }: any) => {
     const [newsItems] = useContext(NewsContext)
     const { locale } = useTranslation();
     const router = useRouter();
@@ -26,7 +26,7 @@ const NewsItem = ({ title, date, text, bigImg }) => {
                 </div>
                 <div className="new-press-center-container">
                     {
-                        newsItems.filter((el: any) => el.id != router.query.id).map(({img, time, title, id: index}, idx) => (
+                        newsItems.filter((el: any) => el.id != router.query.id).map(({img, time, title, id: index}: any, idx: number) => (
                             <div key={idx} className="new-press-center-item">
                                 <img src={img} alt="" className="new-press-center-item__img"/>
                                 <div className="new-press-center-item__time">{time}</div>
@@ -43,7 +43,7 @@ const NewsItem = ({ title, date, text, bigImg }) => {
     )
 }
 
-NewsItem.getInitialProps = async (ctx) => {
+NewsItem.getInitialProps = async (ctx: any) => {
     const response = await fetch(`${BASE_URL}/news-items/${ctx.query.id}`)
     const news = response.json()
 

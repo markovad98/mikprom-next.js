@@ -1,15 +1,13 @@
-import React, {useContext, useState} from "react";
+import React, {useState} from "react";
 import Link from "next/link";
 import useTranslation from "../hooks/useTranslation";
 import {useRouter} from "next/router";
 import {navItems} from "../constants/navItems";
-import {CartContext} from "../context/CartContext";
 
 const MobileHeader = () => {
   const { locale } = useTranslation();
   const [isActive, setIsActive] = useState(false);
   const [isEng, setIsEng] = useState(false);
-  const [products] = useContext(CartContext);
   const handleToggleMenu = () => setIsActive(!isActive);
   const { pathname } = useRouter();
 
@@ -62,7 +60,7 @@ const MobileHeader = () => {
       
       <nav className={`mobile-header-nav container ${!isActive ? 'mobile-header-nav_hide' : ''}`}>
         <ul className="mobile-header-nav-list">
-          {navItems(locale, pathname, products.reduce((acc: number, { count }: { count: number }) => acc + count, 0)).filter(({ title }) => typeof title === 'string').map(({ title, path, link, isActive }, idx) => (
+          {navItems(locale, pathname).filter(({ title }) => typeof title === 'string').map(({ title, path, link, isActive }, idx) => (
             <li key={idx} className="mobile-header-nav-list__item">
               <Link href={path} as={link}>
                 <a className={`mobile-header-nav-list__link ${isActive ? 'mobile-header-nav-list__link_active' : ''}`}>{title}</a>

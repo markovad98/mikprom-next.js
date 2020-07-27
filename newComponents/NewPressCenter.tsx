@@ -38,7 +38,7 @@ const NewPressCenter = ({ initialPageSize = 3 }: { initialPageSize?: number }) =
             </div>
             <div className="new-press-center-container">
                 {
-                    news?.slice(currentPage, currentPage + pageSize)?.map(({ img, time, title, id: index}, idx) => (
+                    news?.slice(currentPage, currentPage + pageSize)?.map(({ img, time, title, id: index}: any, idx: number) => (
                         <div key={idx} className="new-press-center-item">
                             <img src={img} alt="" className="new-press-center-item__img"/>
                     <div className="new-press-center-item__time">{time}</div>

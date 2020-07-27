@@ -24,7 +24,7 @@ const OurProducts = () => {
             </Link>
             <div className="our-products-container">
                 {
-                    products.map(({ img, title }, idx) => (
+                    products.map(({ img, title }: { img: any, title: any}, idx: number) => (
                         <div key={idx} className="article our-products__item"><img src={img} alt="" className="our-products__img"/>
                             <div className="our-products__product-name">{title}</div>
                             <button className="our-products__button">Получить прайс</button>

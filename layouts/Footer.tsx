@@ -44,7 +44,7 @@ const Footer = () => {
         <section className="footer-contacts--last footer-section">
           <h4 className="contacts">Разделы</h4>
           <ul className="section-nav footer-menu">
-            {navItems(locale, pathname, 0)
+            {navItems(locale, pathname)
               .filter(({ title }) => typeof title === "string")
               .map(({ title, path, link }, idx) => (
                 <li key={idx}>

@@ -3,7 +3,7 @@
 
 .news-item {
   &-title {
-    @include section-title()
+    @include section-title();
     margin-bottom: 30px;
   }
 
