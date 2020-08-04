@@ -37,16 +37,6 @@ const MobileHeader = () => {
         </div>
 
         <section className="mobile-header-cart-search">
-          <div className="mobile-header-cart">
-            <Link href={"/[lang]/cart"} as={`/${locale}/cart`}>
-              <img
-                className="mobile-header-cart__img"
-                src={require("../public/images/icons/darkCart.png")}
-                alt="cart"
-              />
-            </Link>
-              <div className="mobile-header-cart__circle">1</div>
-          </div>
           <article className="mobile-header-search">
             <img
               src={require("../public/images/icons/searchGreyIcon.png")}

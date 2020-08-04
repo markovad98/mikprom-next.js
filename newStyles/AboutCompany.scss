@@ -63,9 +63,13 @@
     @include green-button();
     margin-bottom: 118px;
   }
+}
 
-  &-slider {
-
+@media (max-width: 986px) {
+  .new-about-company {
+    &-button {
+      margin-bottom: 40px;
+    }
   }
 }
 

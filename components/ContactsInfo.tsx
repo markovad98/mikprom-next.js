@@ -129,14 +129,10 @@ const ContactsInfo = () => {
         </div>
       </section>
 
-      <div className="map-geo">  
+      <div className="map-geo">
         <iframe
-          src="https://yandex.ru/map-widget/v1/?um=constructor%3A0a24cadd678ca982678aa337ecc957877be022ed0422d149058cf0b708105184&amp;source=constructor"
-          width="100%"
-          height="612"
-          className ="map-height"
-          frameBorder="0">
-        </iframe>
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3A3cdd84add39be83f2058d30f4f0e81b5e6a6e7e0083db9cc53ac24308731162f&amp;source=constructor"
+            width="100%" height="612" frameBorder="0"></iframe>
       </div>
     </section>
   );

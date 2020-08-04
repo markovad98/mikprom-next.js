@@ -2,7 +2,7 @@
 @import "styles/variables";
 
 .vacancy {
-  padding: 80px 0 200px 0;
+  padding: 60px 0;
   &-title {
     @include section-title();
     margin-bottom: 30px;
@@ -39,5 +39,11 @@
   &-icon {
     width: 38px;
     margin-right: 12px;
+  }
+}
+
+@media (max-width: 968px) {
+  .vacancy {
+    padding: 20px 0px;
   }
 }

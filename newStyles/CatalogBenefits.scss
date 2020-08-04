@@ -2,10 +2,11 @@
 @import "styles/variables";
 
 .catalog-benefits {
-  padding: 130px 0 100px 0;
+  padding: 80px 0px;
 
   &-title {
     @include section-title();
+    font-size: 1.5rem;
     max-width: 740px;
     margin-bottom: 30px;
   }
@@ -25,6 +26,12 @@
 
   &-button {
     @include green-button();
+  }
+}
+
+@media (max-width: 968px) {
+  .catalog-benefits {
+    padding: 20px 0 20px 0;
   }
 }
 
