@@ -1,4 +1,5 @@
 import React from "react";
+import ym from "react-yandex-metrika";
 
 const Benefits = () => {
 
@@ -29,6 +30,9 @@ const Benefits = () => {
       iconSize: { width: "87px", height: "" }
     }
   ];
+  const hit = () => {
+    ym("56385712",'reachGoal','Opt')
+  }
 
   return (
     <div className="bg-grey down">
@@ -43,7 +47,7 @@ const Benefits = () => {
           </article>
         ))}
       </section>
-      <button className="benefits-btn">Получить прайс</button>
+      <button className="benefits-btn" onClick={hit}>Получить прайс</button>
     </div>
     </div>
   );

@@ -1,7 +1,13 @@
 import React from "react";
 import unfetch from "unfetch";
+import ym from "react-yandex-metrika";
 
 const Feedback = () => {
+
+    const hit = () => {
+        ym("56385712",'reachGoal','Opt')
+    }
+
   return (
     <section className="feedback container">
       <h3 className="feedback-title">Форма обратной связи</h3>
@@ -50,7 +56,7 @@ const Feedback = () => {
               display: "flex",
               width: "100%"
           }}>
-              <button type="submit" className="feedback-form-button">Отправить</button>
+              <button type="submit" className="feedback-form-button" onClick={hit}>Отправить</button>
           </div>
       </form>
     </section>

@@ -1,18 +1,46 @@
-import React from "react";
+import React, {useEffect} from "react";
 import LocaleSwitcher from "../components/LocaleSwitcher";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import useTranslation from "../hooks/useTranslation";
 import { navItems } from "../constants/navItems";
 import {socialIcons} from "../constants/socialIcons";
+import { YMInitializer } from 'react-yandex-metrika';
 
 const Header: React.FC = () => {
+
+  function metrika(): any {
+    return (
+        "   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\n" +
+        "   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})\n" +
+        "   (window, document, \"script\", \"https://mc.yandex.ru/metrika/tag.js\", \"ym\");\n" +
+        "\n" +
+        "   ym(56385712, \"init\", {\n" +
+        "        clickmap:true,\n" +
+        "        trackLinks:true,\n" +
+        "        accurateTrackBounce:true,\n" +
+        "        webvisor:true\n" +
+        "   });\n"
+    )
+  }
+
+  useEffect(() => {
+      const script = document.createElement("script");
+      script.innerHTML = metrika();
+
+      const header = document.getElementById("header-script");
+      // @ts-ignore
+      header.appendChild(script);
+  }, [])
+
   const { locale } = useTranslation();
   const { pathname } = useRouter();
 
   return (
     <React.Fragment>
-      <header className="header">
+        <YMInitializer accounts={[56385712]} />
+        <div id="header-script"></div>
+      <header id="header" className="header">
         <section className="header-info">
           {/* LOGO */}
           <section className="header-logo-contacts">

@@ -1,6 +1,11 @@
 import React from 'react';
+import ym from "react-yandex-metrika";
 
 const PartnersThreeBlocks = () => {
+    const hit = () => {
+        ym("56385712",'reachGoal','Opt')
+    }
+
     return (
         <section className="">
             <section className="partners-business container">
@@ -35,7 +40,7 @@ const PartnersThreeBlocks = () => {
                 <div style={{
                     marginTop: "54px"
                 }} className="c-b-c">
-                <button className="partners-get-price">Получить Прайс</button>
+                <button className="partners-get-price" onClick={hit}>Получить Прайс</button>
                 </div>
             </section>
 

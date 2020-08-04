@@ -1,6 +1,12 @@
 import React from "react";
+import ym from "react-yandex-metrika";
 
 const CatalogBenefits = () => {
+
+    const hit = () => {
+        ym("56385712",'reachGoal','Opt')
+    }
+
     return (
         <section className="container catalog-benefits">
             <h1 className="catalog-benefits-title">ПРЕИМУЩЕСТВА СОТРУДНИЧЕСТВА С КОМПАНИЕЙ МИКПРОМ</h1>
@@ -26,7 +32,7 @@ const CatalogBenefits = () => {
             </div>
 
             <div className="c-b-c">
-                <button className="catalog-benefits-button">Получить прайс</button>
+                <button className="catalog-benefits-button" onClick={hit}>Получить прайс</button>
             </div>
         </section>
     )

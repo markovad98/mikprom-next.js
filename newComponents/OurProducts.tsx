@@ -2,12 +2,15 @@ import React, {useContext} from "react";
 import {ProductsContext} from "../context/ProductsContext";
 import Link from "next/link";
 import useTranslation from "../hooks/useTranslation";
+import ym from 'react-yandex-metrika';
 
 const OurProducts = () => {
     const [products] = useContext(ProductsContext)
     const { locale } = useTranslation();
 
-    console.log(products);
+    const hit = () => {
+        ym("56385712",'reachGoal','Opt')
+    }
 
     return (
         <section className="container our-products">
@@ -27,7 +30,7 @@ const OurProducts = () => {
                     products.map(({ img, title }: { img: any, title: any}, idx: number) => (
                         <div key={idx} className="article our-products__item"><img src={img} alt="" className="our-products__img"/>
                             <div className="our-products__product-name">{title}</div>
-                            <button className="our-products__button">Получить прайс</button>
+                            <button className="our-products__button" onClick={hit}>Получить прайс</button>
                         </div>
                     ))
                 }

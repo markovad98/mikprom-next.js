@@ -1,4 +1,5 @@
 import React from "react";
+import ym from "react-yandex-metrika";
 
 const topics = [
     {
@@ -32,6 +33,10 @@ const topics = [
 ]
 
 const NewAboutCompany = ({ withVideo }: { withVideo: boolean }) => {
+    const hit = () => {
+        ym("56385712",'reachGoal','Opt')
+    }
+
     return (
         <div style={{
             background: !withVideo ? "white" :  "#F8F8F8",
@@ -66,7 +71,7 @@ const NewAboutCompany = ({ withVideo }: { withVideo: boolean }) => {
             </div>
 
             <div className="new-about-company-button-container">
-                <button className="new-about-company-button">
+                <button onClick={hit} className="new-about-company-button">
                     ПОЛУЧИТЬ ПРАЙС
                 </button>
             </div>

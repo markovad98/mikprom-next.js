@@ -1,6 +1,7 @@
 import React, { useState, useContext } from "react";
 import { ProductsContext } from "../context/ProductsContext";
 import ProductModal from "./ProductModal";
+import ym from "react-yandex-metrika";
 
 const ProductSections = () => {
   const [isVisibleModal, setIsVisibleModal] = useState(false);
@@ -58,6 +59,10 @@ const ProductSections = () => {
     setTabItems(newTabItems);
   };
 
+  const hit = () => {
+    ym("56385712",'reachGoal','Opt')
+  }
+
   return (
     <section className="container">
           <ul className="section-nav">
@@ -79,7 +84,7 @@ const ProductSections = () => {
             products.filter(({ category }: { category: any}) => category === tabItems?.find(tab => tab?.isActive)?.value).map(({ img, title, id }: any, idx: number) => (
                 <div onClick={handleShowModal(id)} key={idx} className="article our-products__item"><img src={img} alt="" className="our-products__img"/>
                   <div className="our-products__product-name">{title}</div>
-                  <button className="our-products__button">Получить прайс</button>
+                  <button className="our-products__button" onClick={hit}>Получить прайс</button>
                 </div>
             ))
           }
