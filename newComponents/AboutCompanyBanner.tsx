@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutCompanyBanner = () => {
     return (
-            <img className="about-company-banner" src={require("../public/images/aboutBanner.jpg")} alt=""/>
+            <img className="about-company-banner" src={require("../public/images/aboutBanner-min.jpg")} alt=""/>
     )
 }
 
