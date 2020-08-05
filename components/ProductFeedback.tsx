@@ -19,7 +19,7 @@ const ProductFeedback = () => {
             <input type="tel" name="phone" className="feedback-form__input input-indent" />
           </label>
           <label htmlFor="" className="feedback-form__label">
-          <span className="style-form ml-name">e-mail</span>
+          <span className="style-form ml-name">E-mail</span>
             <input type="email" className="feedback-form__input input-indent" />
           </label>
         </div>

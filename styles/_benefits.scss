@@ -25,7 +25,6 @@
 
   &-btn {
     @include green-button();
-    margin-bottom: 6rem;
   }
 
   &-item {
@@ -46,7 +45,7 @@
   }
 }
 
-@media(max-width: 850px){
+@media(max-width: 1000px){
   .benefits {
     grid-template-columns: repeat(auto-fit, minmax(150px, 280px));
 
@@ -59,6 +58,20 @@
         width: 100px;
       }
     }
+  }
+}
+
+@media(max-width: 620px) {
+  .benefits {
+    &-item {
+      &__title {
+        text-align: left;
+        padding-left: 1rem;
+      }
+    }
+  }
+  .benefits-container {
+    align-items: flex-start;
   }
 }
 

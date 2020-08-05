@@ -1,35 +1,40 @@
-const nodemailer = require("nodemailer");
+const nodemailder = require("nodemailer")
 
-export default async function contact(req, res) {
+const transporter = nodemailder.createTransport({
+    host: 'smtp.gmail.com',
+    port: 587,
+    secure: false,
+    auth: {
+        user: 'markovalexeydmit@gmail.com',
+        pass: '6QmpZ1mvzm'
+    }
+})
 
-    let testAccount = await nodemailer.createTestAccount();
+const mailer = msg => {
+    transporter.sendMail(msg, (err, info) => {
+        if (err) return console.log(err);
+        console.log("YE! ", info);
+    })
+}
 
-    // create reusable transporter object using the default SMTP transport
-    let transporter = nodemailer.createTransport({
-        host: "smtp.ethereal.email",
-        port: 587,
-        secure: false, // true for 465, false for other ports
-        auth: {
-            user: testAccount.user, // generated ethereal user
-            pass: testAccount.pass, // generated ethereal password
-        },
-    });
+export default function contact(req, res) {
+    const { email, phone, name } = req.body;
 
-    // send mail with defined transport object
-    let info = await transporter.sendMail({
-        from: '"Fred Foo 👻" <foo@example.com>', // sender address
-        to: "bar@example.com, markovalexeydmit@gmail.com", // list of receivers
-        subject: "Hello ✔", // Subject line
-        text: "Hello world?", // plain text body
-        html: "<b>Hello world?</b>", // html body
-    });
+    const message = {
+        from: "Заявка с сайта Mikprom <markovalexeydmit@gmail.com>",
+        to: "info@mikprom.ru",
+        subject: "Новая заявка",
+        text: `
+        Имя закупщика: ${name}
+        Телефон: ${phone}
+        Почта ${email}
+        `,
+    }
 
-    console.log("Message sent: %s", info.messageId);
-    // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
-
-    // Preview only available when sending through an Ethereal account
-    console.log("Preview URL: %s", nodemailer.getTestMessageUrl(info));
-    // Preview URL: https://ethereal.email/message/WaQKMgKddxQDoou...
-
-    res.end();
+    mailer(message)
+    res.statusCode = 200;
+    res.setHeader("Content-Type", "application/json")
+    res.end(JSON.stringify({
+        msg: req.body
+    }))
 }

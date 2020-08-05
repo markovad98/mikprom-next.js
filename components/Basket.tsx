@@ -45,7 +45,7 @@ const Basket = () => {
           </div>
 
           <div className="input-styles top-in el">
-            <span className="text-adress-info rights">e-mail</span>
+            <span className="text-adress-info rights">E-mail</span>
             <input
               type="email"
               className="feedback-form__input feedback-form__styles"

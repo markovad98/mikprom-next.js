@@ -23,16 +23,14 @@ const Feedback = () => {
               })
           })
       }} className="feedback-form">
-        <div style={{
-            display: "flex",
-        }}>
+        <div className="feedback-form-columns">
           <div className="feedback-form-left">
           <label htmlFor="" className="feedback-form__label">
           <span className="style-form"> Имя <sup className="label-star">*</sup></span>
             <input type="text" name="name" className="feedback-form__input" />
           </label>
           <label htmlFor="" className="feedback-form__label">
-          <span className="style-form">e-mail<sup className="label-star">*</sup></span>
+          <span className="style-form">E-mail<sup className="label-star">*</sup></span>
             <input type="text"name="mail" className="feedback-form__input" />
           </label>
         </div>
@@ -52,10 +50,7 @@ const Feedback = () => {
           <div className="new-feedback-hint">
               Нажимая на кнопку “отправить” вы даётё согласие на обработку ваших персональных данных. Мы гарантируем использование ваших данных только для осуществления обратной связи.
           </div>
-          <div style={{
-              display: "flex",
-              width: "100%"
-          }}>
+          <div className="feedback-form-button-container">
               <button type="submit" className="feedback-form-button" onClick={hit}>Отправить</button>
           </div>
       </form>

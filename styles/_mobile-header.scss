@@ -18,6 +18,7 @@
 
       &__item {
         margin-bottom: 2rem;
+        font-size: 1rem;
       }
 
       &__link {
@@ -137,7 +138,11 @@
 @media (max-width: 640px) {
   .mobile-header {
     &-nav {
-      height: 360px;
+      height: 460px;
+
+      &-list {
+        padding: 0;
+      }
     }
     &-nav_hide {
       height: 0;

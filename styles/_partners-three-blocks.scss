@@ -118,23 +118,8 @@
 }
 
 .btn-application{
-    margin-top: 25px;
-    border: none;
-    width: 210px;
-    height: 50px;
-    background: rgba(176, 205, 139, 0.5);
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    cursor: pointer;
-}
-
-.btn-application:hover {
-    background: rgba(150, 192, 94, 0.5);
+    margin-top: 1rem;
+    @include white-button();
 }
 
 .number-app{
@@ -260,20 +245,6 @@
         @include text();
         width: 100%;
     }
-    
-    .btn-application{
-        margin-top: 1.5rem;
-        border: none;
-        background: rgba(176, 205, 139, 0.5);
-        font-family: Montserrat;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 1rem;
-        line-height: 1.2rem;
-        text-align: center;
-        width: 110px;
-        height: 30px;
-    }
 
 .number-app{
     position: absolute;
@@ -322,6 +293,14 @@
 }
 
 @media (max-width: 400px) {
+    .btn-application {
+        padding: 4px 16px !important;
+    }
+
+
+}
+
+@media (max-width: 320px) {
     .partners-business{
         padding-left: 1rem;
         padding-right: 1rem;

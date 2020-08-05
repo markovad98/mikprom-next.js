@@ -1,9 +1,25 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ym from "react-yandex-metrika";
+import RegistrationRequestModal from "../newComponents/RegistrationRequestModal";
+import DocumentsModal from "../newComponents/DocumentsModal";
 
 const PartnersThreeBlocks = () => {
+    const [isVisibleRequestModal, setIsVisibleRequestModal] = useState(false)
+    const [isVisibleDocModal, setIsVisibleDocModal] = useState(false)
     const hit = () => {
         ym("56385712",'reachGoal','Opt')
+    }
+
+    const hideModal = (e: any) => {
+        if (e.target.className === "modal modal_show") {
+            setIsVisibleRequestModal(false)
+        }
+    }
+
+    const hideDocModal = (e: any) => {
+        if (e.target.className === "modal modal_show") {
+            setIsVisibleDocModal(false)
+        }
     }
 
     return (
@@ -66,14 +82,16 @@ const PartnersThreeBlocks = () => {
                     <div className="wrapper">
                         <h2 className="title-application">Подать заявку</h2>
                         <p className="text-application">Чтобы стать нашим партнером, заполните форму. Это займет не более минуты.</p>
-                        <button className="btn-application">Подать заявку</button>
+                        <button onClick={() => setIsVisibleRequestModal(true)} className="btn-application">Подать заявку</button>
                     </div>
+                    { isVisibleRequestModal && <RegistrationRequestModal hideModal={hideModal}/> }
+                    { isVisibleDocModal && <DocumentsModal hideModal={hideDocModal}/> }
 
                     <div className="number-app-two">2</div>
                     <div className="wrapper">
                         <h2 className="title-application">Оформить документы</h2>
                         <p className="text-application">Вы можете ознакомиться с перечнем всех необходимых для заключения договора документов.</p>
-                        <button className="btn-application pzeo">Подробнее</button>
+                        <button onClick={() => setIsVisibleDocModal(true)} className="btn-application pzeo">Подробнее</button>
                     </div>
                 </div>{/* application */}
             </section>

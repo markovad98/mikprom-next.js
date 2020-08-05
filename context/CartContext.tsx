@@ -1,5 +1,4 @@
 import React, { useState, createContext } from "react";
-import {TProduct} from "./ProductsContext";
 
 export const CartContext = createContext({} as any);
 
@@ -9,10 +8,10 @@ type TProps = {
 
 
 export const CartProvider: React.FC<TProps> = ({ children }: any) => {
-    const [products, setProducts] = useState<Array<TProduct>>([]);
+    const [isActiveWidget, setIsActiveWidget] = useState(false);
 
     return (
-        <CartContext.Provider value={[products, setProducts]}>
+        <CartContext.Provider value={[isActiveWidget, setIsActiveWidget]}>
             {children}
         </CartContext.Provider>
     );

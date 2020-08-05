@@ -5,6 +5,7 @@ import Layout from "../layouts";
 import { CartProvider } from "../context/CartContext";
 import Head from "next/head";
 import "../styles.scss"
+import Widget from "../newComponents/Widget";
 
 type TProps = {
   Component: React.FC;
@@ -27,6 +28,7 @@ const MyApp: React.FC<TProps> = ({ Component, pageProps }) => {
           <CartProvider>
             <Layout>
               <Component {...pageProps} />
+              <Widget />
             </Layout>
           </CartProvider>
         </ProductsProvider>
