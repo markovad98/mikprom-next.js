@@ -1,7 +1,7 @@
 import React from "react";
 
 interface IProps {
-    hideModal: () => void;
+    hideModal: (e: any) => void;
 }
 
 const RegistrationRequestModal: React.FC<IProps> = ({ hideModal }) => {
