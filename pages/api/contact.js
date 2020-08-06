@@ -18,17 +18,24 @@ const mailer = msg => {
 }
 
 export default function contact(req, res) {
-    const { email, phone, name } = req.body;
+
+    const { email, phone, name, message: msg, companyName, fullName } = req.body;
 
     const message = {
         from: "Заявка с сайта Mikprom <markovalexeydmit@gmail.com>",
         to: "info@mikprom.ru",
         subject: "Новая заявка",
         text: `
+        *Данные пришедшие с формы зависят от формы, с которой пришла заявка*
+        *К примеру, если есть поля "Имя компании" значит данные пришли с формы расположенной на странице "Парнерам"*
         Имя закупщика: ${name}
         Телефон: ${phone}
         Почта ${email}
-        `,
+        Сообщение: ${msg}
+        Имя компании: ${companyName}
+        Полное имя: ${fullName}
+        `
+        ,
     }
 
     mailer(message)

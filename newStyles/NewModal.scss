@@ -34,3 +34,15 @@
     }
   }
 }
+
+@media (max-width: 620px) {
+  .new-modal {
+    &-container {
+      flex-direction: column;
+    }
+
+    &-title {
+      line-height: 1.4;
+    }
+  }
+}

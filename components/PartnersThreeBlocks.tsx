@@ -6,6 +6,7 @@ import DocumentsModal from "../newComponents/DocumentsModal";
 const PartnersThreeBlocks = () => {
     const [isVisibleRequestModal, setIsVisibleRequestModal] = useState(false)
     const [isVisibleDocModal, setIsVisibleDocModal] = useState(false)
+
     const hit = () => {
         ym("56385712",'reachGoal','Opt')
     }
