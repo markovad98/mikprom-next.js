@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import { ProductsContext } from "../context/ProductsContext";
 import ProductModal from "./ProductModal";
 import ym from "react-yandex-metrika";
+import {CartContext} from "../context/CartContext";
 
 const ProductSections = () => {
   const [isVisibleModal, setIsVisibleModal] = useState(false);
@@ -42,6 +43,11 @@ const ProductSections = () => {
       value: "meat",
     },
     {
+      title: "BBQ",
+      isActive: false,
+      value: "bbq",
+    },
+    {
       title: "Все категории",
       isActive: false,
       value: "all",
@@ -58,9 +64,11 @@ const ProductSections = () => {
     );
     setTabItems(newTabItems);
   };
+  const [, setIsActiveWidget] = useContext(CartContext)
 
   const hit = () => {
     ym("56385712",'reachGoal','Opt')
+    setIsActiveWidget(true)
   }
 
   return (

@@ -1,5 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 import axios from "axios"
+import {CartContext} from "../context/CartContext";
 
 interface IProps {
     setUnActive: () => void;
@@ -9,6 +10,7 @@ interface IProps {
 const ActiveWidget: React.FC<IProps> = ({ setUnActive, isPhone }) => {
     const [isMounted, setIsMounted] = useState(false);
     const [isLoading, setIsloading] = useState(false);
+    const [, setIsActiveWidget] = useContext(CartContext)
     const [form, setForm] = useState<any>({
         name: "",
         phone: "",
@@ -36,7 +38,8 @@ const ActiveWidget: React.FC<IProps> = ({ setUnActive, isPhone }) => {
 
     const unActive = () => {
         setTimeout(() => {
-            setUnActive()
+            setUnActive();
+            setIsActiveWidget(false)
         }, 500)
         setIsMounted(false)
     }

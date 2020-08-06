@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useContext} from "react";
 import ym from "react-yandex-metrika";
+import {CartContext} from "../context/CartContext";
 
 const CatalogBenefits = () => {
+    const [, setIsActiveWidget] = useContext(CartContext)
 
     const hit = () => {
         ym("56385712",'reachGoal','Opt')
+        setIsActiveWidget(true)
     }
 
     return (

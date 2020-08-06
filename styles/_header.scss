@@ -47,6 +47,13 @@
 
   &-phone-mail {
     display: flex;
+    &__mail {
+      font-size: 1.5rem;
+    }
+  }
+
+  &-mail__mail {
+    font-size: 1.5rem;
   }
 
   &-phone {
@@ -54,10 +61,12 @@
     align-items: center;
     margin-right: 3rem;
 
+
     &__link {
       color: $grey;
       font-size: 1rem;
       white-space: nowrap;
+      font-size: 1.5rem;
     }
 
     &__icon {
@@ -78,7 +87,7 @@
 
     &__mail {
       color: $grey;
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   }
 

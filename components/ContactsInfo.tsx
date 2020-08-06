@@ -1,7 +1,15 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
-import React from "react";
+import React, {useState} from "react";
+import RegistrationRequestModal from "../newComponents/RegistrationRequestModal";
 
 const ContactsInfo = () => {
+  const [isVisibleRequestModal, setIsVisibleRequestModal] = useState(false)
+
+  const hideModal = (e: any) => {
+    if (e.target.className === "modal modal_show") {
+      setIsVisibleRequestModal(false)
+    }
+  }
   return (
     <section className="indent">
       <section className="contacts-info ">
@@ -111,7 +119,7 @@ const ContactsInfo = () => {
             <p className="subtitle-fill">
               Заполните форму обратной связи и получите ответы на свои вопросы.
             </p>
-            <button className="btn-fill">
+            <button onClick={() => setIsVisibleRequestModal(true)} className="btn-fill">
               <img
                 className="icon-pen"
                 src={require("../public/images/pen.svg")}
@@ -128,6 +136,8 @@ const ContactsInfo = () => {
         </section>
         </div>
       </section>
+
+      { isVisibleRequestModal && <RegistrationRequestModal hideModal={hideModal}/> }
 
       <div className="map-geo">
         <iframe

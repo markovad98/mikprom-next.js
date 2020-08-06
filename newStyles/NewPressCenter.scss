@@ -2,7 +2,7 @@
 @import "styles/variables";
 
 .new-press-center {
-  padding: 85px 0;
+  padding-top: 42px;
 
   &-title {
     @include section-title();
@@ -18,7 +18,7 @@
   &-pagination {
     display: flex;
     justify-content: center;
-    margin: 50px 0;
+    margin: 16px 0;
   }
 
   &-item {

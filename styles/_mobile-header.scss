@@ -142,6 +142,10 @@
 
       &-list {
         padding: 0;
+
+        &__link {
+          font-size: 1.5rem;
+        }
       }
     }
     &-nav_hide {

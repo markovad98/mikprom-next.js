@@ -1,14 +1,17 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import ym from "react-yandex-metrika";
 import RegistrationRequestModal from "../newComponents/RegistrationRequestModal";
 import DocumentsModal from "../newComponents/DocumentsModal";
+import {CartContext} from "../context/CartContext";
 
 const PartnersThreeBlocks = () => {
     const [isVisibleRequestModal, setIsVisibleRequestModal] = useState(false)
     const [isVisibleDocModal, setIsVisibleDocModal] = useState(false)
+    const [, setIsActiveWidget] = useContext(CartContext)
 
     const hit = () => {
         ym("56385712",'reachGoal','Opt')
+        setIsActiveWidget(true)
     }
 
     const hideModal = (e: any) => {
